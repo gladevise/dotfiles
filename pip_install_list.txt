@@ -11,6 +11,5 @@ wheel
 cfn-lint
 pysnooper
 pandas
-pprint
 tmuxp
 powerline-status

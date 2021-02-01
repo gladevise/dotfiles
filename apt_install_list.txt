@@ -34,6 +34,7 @@ xsel
 curl
 wget
 ncdu
+nnn
 
 gimp
 inkscape

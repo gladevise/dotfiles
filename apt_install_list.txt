@@ -35,6 +35,7 @@ curl
 wget
 ncdu
 nnn
+rename
 
 gimp
 inkscape

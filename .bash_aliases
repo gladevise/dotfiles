@@ -51,6 +51,7 @@ alias cppmon='nodemon -w "../" -x "make -j8" -e "hpp,cpp"'
 alias cpptest='nodemon -w "../" -x "make -j8 && make test" -e "hpp,cpp" -q --spawn'
 
 # Node command aliases
+alias nr='npm run'
 alias nrd='npm run develop'
 alias nrb='npm run build'
 alias nrs='npm run serve'
@@ -58,6 +59,9 @@ alias yad='yarn develop'
 alias yab='yarn build'
 alias yas='yarn start'
 alias bs='browser-sync start --server --files "*, ./**/*.css, ./**/*.js"'
+
+# pdm aliases
+alias pr='pdm run'
 
 # create directory and file at once
 mkt(){

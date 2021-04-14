@@ -8,8 +8,8 @@ pylint
 black
 jedi
 wheel
-cfn-lint
 pysnooper
 pandas
 tmuxp
 powerline-status
+pdm

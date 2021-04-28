@@ -51,6 +51,7 @@ alias cppmon='nodemon -w "../" -x "make -j8" -e "hpp,cpp"'
 alias cpptest='nodemon -w "../" -x "make -j8 && make test" -e "hpp,cpp" -q --spawn'
 
 # Node command aliases
+alias ni='npm install'
 alias nr='npm run'
 alias nrd='npm run develop'
 alias nrb='npm run build'

@@ -1,4 +1,4 @@
-# tombo gokuraku dotfiles
+# dotfiles
 
 ## Install
 
@@ -24,10 +24,10 @@ link.sh を実行する。
 
 ### deb をダウンロードしてインストールするプログラムを入れる(Optional)
 
-- [ Chrome ](https://www.google.com/chrome/)
-- [ Discord ](https://discordapp.com/download)
-- [ Slack ](https://slack.com/intl/ja-jp/downloads/linux)
-- [ Steam ](https://store.steampowered.com/about/)
+- [Chrome](https://www.google.com/chrome/)
+- [Discord](https://discordapp.com/download)
+- [Slack](https://slack.com/intl/ja-jp/downloads/linux)
+- [Steam](https://store.steampowered.com/about/)
 
 ## Keybinds
 

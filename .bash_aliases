@@ -1,5 +1,6 @@
 alias pip=pip3
 alias python=python3
+alias py=python3
 alias i=nvim
 alias aptupg='sudo apt update && apt list --upgradable && sudo apt upgrade -y'
 alias lg=lazygit

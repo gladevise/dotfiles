@@ -60,6 +60,7 @@ tsこんふぃg	tsconfig.json	名詞
 とぃってr	Twitter	名詞	
 tyぺscりpt	TypeScript	名詞	
 たいぷすくりぷと	TypeScript	名詞	
+ts	TypeScript	名詞	
 うぶんつ	Ubuntu	名詞	
 ゔぁにっぁ	Vanilla	名詞	
 ゔぃm	Vim	名詞	

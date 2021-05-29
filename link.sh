@@ -18,3 +18,4 @@ ln -snfv ~/dotfiles/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritt
 ln -snfv ~/dotfiles/.config/starship.toml ~/.config/starship.toml
 ln -snfv ~/dotfiles/.config/git/ignore ~/.config/git/ignore
 ln -snfv ~/dotfiles/.config/git/config ~/.config/git/config
+ln -snfv ~/dotfiles/.dprint.json ~/.dprint.json

@@ -5,3 +5,4 @@ fd-find
 bottom
 tealdeer
 starship
+dprint

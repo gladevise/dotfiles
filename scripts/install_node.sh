@@ -1,4 +1,9 @@
 #!/bin/bash
+
+pushd $PWD
+cd `dirname $0`
+echo $PWD
+
 # install nvm & Node.js & npm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
@@ -8,3 +13,5 @@ export NVM_DIR="$HOME/.nvm"
 nvm install lts/*  --reinstall-packages-from=node
 nvm use --lts
 cat ./npm_install_list.txt  | xargs npm -g install
+
+popd

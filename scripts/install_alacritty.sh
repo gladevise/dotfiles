@@ -1,4 +1,8 @@
 #!/bin/bash
+# Install alacritty
+pushd $PWD
+cd `dirname $0`
+echo $PWD
 
 # check alacritty installation
 if [[  $(command -v alacritty)  ]]; then
@@ -7,8 +11,6 @@ if [[  $(command -v alacritty)  ]]; then
 else
   echo "alacritty is not installed"
 fi
-
-pushd .
 
 # make applications directory
 mkdir -p ~/Apps
@@ -27,14 +29,14 @@ else
 fi
 
 # update rustup
-rustup override set stable
-rustup update stable
+$HOME/.cargo/bin/rustup override set stable
+$HOME/.cargo/bin/rustup update stable
 
 # install build dependencies
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 -y
 
 # build alacritty
-cargo build --release
+$HOME/.cargo/bin/cargo build --release
 
 # terminfo check
 infocmp alacritty

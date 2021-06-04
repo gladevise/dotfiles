@@ -1,29 +1,29 @@
 #!/bin/bash
 
+pushd $PWD
+cd `dirname $0`
+echo $PWD
+
 # Install apt packages
-bash ./install_apt.sh
+bash ./scripts/install_apt.sh
 
 # install pip applications
-bash ./install_pip.sh
+bash ./scripts/install_pip.sh
 
 # install snap applications
-bash ./install_snap.sh
+bash ./scripts/install_snap.sh
 
 # install cargo applications
-bash ./install_cargo.sh
+bash ./scripts/install_cargo.sh
 
 # install nvm & Node.js & npm & yarn
-bash ./install_node.sh
-bash ./install_yarn.sh
+bash ./scripts/install_node.sh
+bash ./scripts/install_yarn.sh
 
 # create nvim_env
-bash ./create_nvim_env.sh
-
-# install font
-bash ./install_font.sh
-
-# install powerline
-bash ./install_powerline.sh
+bash ./scripts/create_nvim_env.sh
 
 # link dotfiles
-bash ./link.sh
+bash ./scripts/link.sh
+
+popd

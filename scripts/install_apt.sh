@@ -1,5 +1,10 @@
 #!/bin/bash
 # install apt applications
+
+pushd $PWD
+cd `dirname $0`
+echo $PWD
+
 # ppaを追加する
 ## Add copyq ppa
 if [ -f "/etc/apt/sources.list.d/hluk-ubuntu-copyq-focal.list" ]; then
@@ -25,3 +30,5 @@ fi
 # update & upgrade
 sudo apt update && sudo apt upgrade -y
 cat ./apt_install_list.txt  | xargs sudo apt install -y
+
+popd

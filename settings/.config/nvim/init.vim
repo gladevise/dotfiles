@@ -99,7 +99,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release', 'on': []}
 " highlight styled-components tag literals
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "cxx highlighter
-Plug 'jackguo380/vim-lsp-cxx-highlight'
+" Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 " highlight jsx
 " Plug 'maxmellon/vim-jsx-pretty' " vim-polyglotをインストールすれば自動的に入る

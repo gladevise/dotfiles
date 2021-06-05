@@ -1,27 +1,34 @@
 #!/bin/bash
+
 pushd $PWD
 cd `dirname $0`
-echo $PWD
 
-ln -snfv ~/dotfiles/settings/.bash_aliases ~/.bash_aliases
-ln -snfv ~/dotfiles/settings/.config/nvim/init.vim ~/.config/nvim/init.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/ftplugin/javascript.vim ~/.config/nvim/ftplugin/javascript.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/ftplugin/css.vim ~/.config/nvim/ftplugin/css.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/ftplugin/scss.vim ~/.config/nvim/ftplugin/scss.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/ftplugin/sass.vim ~/.config/nvim/ftplugin/sass.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/ftplugin/html.vim ~/.config/nvim/ftplugin/html.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/ftplugin/vue.vim ~/.config/nvim/ftplugin/vue.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/ftplugin/csv.vim ~/.config/nvim/ftplugin/csv.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/ftdetect/cloudformation.vim ~/.config/nvim/ftdetect/cloudformation.vim
-ln -snfv ~/dotfiles/settings/.config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json
-ln -snfv ~/dotfiles/settings/.tmux.conf ~/.tmux.conf
-ln -snfv ~/dotfiles/settings/.hyper.js ~/.hyper.js
-ln -snfv ~/dotfiles/settings/.stylelintrc ~/.stylelintrc
-ln -snfv ~/dotfiles/settings/.textlintrc.json ~/.textlintrc.json
-ln -snfv ~/dotfiles/settings/.config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-ln -snfv ~/dotfiles/settings/.config/starship.toml ~/.config/starship.toml
-ln -snfv ~/dotfiles/settings/.config/git/ignore ~/.config/git/ignore
-ln -snfv ~/dotfiles/settings/.config/git/config ~/.config/git/config
-ln -snfv ~/dotfiles/settings/.dprint.json ~/.dprint.json
+SEARCH_PATH='../settings'
+
+create_dotfiles_directory(){
+  [[ $1 =~ $SEARCH_PATH(.*) ]]
+  dotfile_directory=$(realpath $HOME${BASH_REMATCH[1]})
+  if [[ ! -d $dotfile_directory ]]; then
+    echo "$dotfile_directory does not exist"
+    mkdir -p $dotfile_directory
+  fi
+}
+
+link_dotfiles(){
+  [[ $1 =~ $SEARCH_PATH(.*) ]]
+  # do not expand symbolic link with -s option
+  dotfile_destination=$(realpath -s $HOME${BASH_REMATCH[1]})
+  dotfile_source=$(realpath -s $1)
+  ln -snfv $dotfile_source $dotfile_destination
+}
+
+export -f create_dotfiles_directory
+export -f link_dotfiles
+
+# search dotfiles directories
+for dir in $(find $SEARCH_PATH -type d); do create_dotfiles_directory $dir; done
+
+# link dotfiles
+for dir in $(find $SEARCH_PATH -type f); do link_dotfiles $dir; done
 
 popd

@@ -70,3 +70,7 @@ alias pr='pdm run'
 mkt(){
   mkdir -p "$(dirname "$1")" && touch "$1" ;
 }
+
+upg(){
+  bash ~/dotfiles/scripts/upgrade.sh
+}

@@ -19,6 +19,7 @@ bash ./scripts/install_cargo.sh
 # install nvm & Node.js & npm & yarn
 bash ./scripts/install_node.sh
 bash ./scripts/install_yarn.sh
+bash ./scripts/install_npm.sh
 
 # create nvim_env
 bash ./scripts/create_nvim_env.sh

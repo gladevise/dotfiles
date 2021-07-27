@@ -2,6 +2,7 @@
 # Install alacritty
 pushd $PWD
 cd `dirname $0`
+echo $PWD
 
 source ./utils.sh
 

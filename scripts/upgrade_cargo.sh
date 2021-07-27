@@ -19,6 +19,9 @@ fi
 # Update cargo packages
 cargo install-update -a
 
+# Upgrade alacritty
+bash ./install_alacritty.sh
+
 # tldrのupdate
 if [[ $(command -v tldr)  ]]; then
   echo "Update tldr"

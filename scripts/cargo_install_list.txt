@@ -6,3 +6,4 @@ bottom
 tealdeer
 starship
 dprint
+cargo-update

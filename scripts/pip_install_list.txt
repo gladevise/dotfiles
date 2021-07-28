@@ -12,6 +12,6 @@ pysnooper
 pandas
 tmuxp
 powerline-status
-pdm
 youtube-dl
 pipdeptree
+pdm

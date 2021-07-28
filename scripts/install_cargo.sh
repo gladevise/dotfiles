@@ -11,15 +11,16 @@ else
   echo "rustup & cargo aren't installed"
   # Install rustup
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y #disable prompt
-  # update rustup
-  #初回インストール時はログアウトするまで`cargo`のパスが通らないので、直接指定する
-  $HOME/.cargo/bin/rustup update stable
-
-  # install build dependencies
-  sudo apt install libssl-dev
-  # install cargo applications
-  cat ./cargo_install_list.txt  | xargs $HOME/.cargo/bin/cargo install -j4
 fi
+
+# update rustup
+#初回インストール時はログアウトするまで`cargo`のパスが通らないので、直接指定する
+$HOME/.cargo/bin/rustup update stable
+
+# install build dependencies
+sudo apt install libssl-dev
+# install cargo applications
+cat ./cargo_install_list.txt  | xargs $HOME/.cargo/bin/cargo install -j4
 
 # install alacritty
 bash ./install_alacritty.sh

@@ -9,6 +9,7 @@ ncu -g | capture_command
 upgradable_packages=$(echo $(get_command) | sed -En 's/.*npm -g install (.*)$/\1/gp')
 
 if [[ -n $upgradable_packages ]];then
+  nvm use --lts
   npm -g install $upgradable_packages
 fi
 

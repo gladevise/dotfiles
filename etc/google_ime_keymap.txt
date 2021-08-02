@@ -24,8 +24,11 @@ Conversion	Ctrl h	Cancel
 Composition	Ctrl h	Backspace
 Composition	Ctrl i	ConvertToFullKatakana
 Conversion	Ctrl i	ConvertToFullKatakana
+Composition	Ctrl j	PredictAndConvert
+Conversion	Ctrl j	ConvertNext
 Composition	Ctrl k	MoveCursorLeft
 Conversion	Ctrl k	SegmentWidthShrink
+Conversion	Ctrl k	ConvertPrev
 Composition	Ctrl l	MoveCursorRight
 Conversion	Ctrl l	SegmentWidthExpand
 Composition	Ctrl Left	MoveCursorToBeginning
@@ -84,6 +87,10 @@ Composition	F8	ConvertToHalfWidth
 Conversion	F8	ConvertToHalfWidth
 Composition	F9	ConvertToFullAlphanumeric
 Conversion	F9	ConvertToFullAlphanumeric
+Composition	Hankaku/Zenkaku	IMEOff
+Conversion	Hankaku/Zenkaku	IMEOff
+DirectInput	Hankaku/Zenkaku	IMEOn
+Precomposition	Hankaku/Zenkaku	IMEOff
 DirectInput	Henkan	IMEOn
 Precomposition	Henkan	IMEOn
 Conversion	Henkan	IMEOn
@@ -125,16 +132,6 @@ Composition	Space	Convert
 Composition	Tab	PredictAndConvert
 Conversion	Tab	PredictAndConvert
 Conversion	Up	ConvertPrev
-Composition	Hankaku/Zenkaku	IMEOff
-Conversion	Hankaku/Zenkaku	IMEOff
-DirectInput	Hankaku/Zenkaku	IMEOn
-Precomposition	Hankaku/Zenkaku	IMEOff
-Composition	Ctrl Space	IMEOff
-Conversion	Ctrl Space	IMEOff
-Precomposition	Ctrl Space	IMEOff
-Composition	Ctrl j	PredictAndConvert
-Conversion	Ctrl j	ConvertNext
-Conversion	Ctrl k	ConvertPrev
 Composition	ASCII	InsertCharacter
 Composition	Kanji	IMEOff
 Composition	OFF	IMEOff

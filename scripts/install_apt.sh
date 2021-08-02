@@ -27,6 +27,13 @@ else
   sudo add-apt-repository -y ppa:obsproject/obs-studio
 fi
 
+## Add git ppa
+if [ -f "/etc/apt/sources.list.d/git-core-ubuntu-ppa-focal.list" ]; then
+  echo "ppa is already existed"
+else
+  sudo add-apt-repository -y ppa:git-core/ppa
+fi
+
 # update & upgrade
 sudo apt update && sudo apt upgrade -y
 cat ./apt_install_list.txt  | xargs sudo apt install -y

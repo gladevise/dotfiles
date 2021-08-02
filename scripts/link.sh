@@ -25,6 +25,13 @@ link_dotfiles(){
 export -f create_dotfiles_directory
 export -f link_dotfiles
 
+# Create empty .gitconfig for not tracking global git settings with dotfiles(.config/git/config)
+# For example user.email & user.name
+if [[ ! -e ~/.gitconfig ]];then
+  echo ".gitconfig file is not exist"
+  touch ~/.gitconfig
+fi
+
 # search dotfiles directories
 for dir in $(find $SEARCH_PATH -type d); do create_dotfiles_directory $dir; done
 

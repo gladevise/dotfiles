@@ -5,5 +5,4 @@ fd-find
 bottom
 tealdeer
 starship
-dprint
 cargo-update

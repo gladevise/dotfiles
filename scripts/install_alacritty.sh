@@ -54,7 +54,7 @@ $HOME/.cargo/bin/rustup override set stable
 $HOME/.cargo/bin/rustup update stable
 
 # install build dependencies
-sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 -y
+sudo apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 
 # build alacritty
 $HOME/.cargo/bin/cargo build --release

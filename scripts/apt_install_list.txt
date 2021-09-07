@@ -27,6 +27,7 @@ silversearcher-ag
 sysstat
 htop
 iftop
+neofetch
 gnome-tweak-tool
 gnome-shell-pomodoro
 meld
@@ -44,6 +45,7 @@ flameshot
 copyq
 obs-studio
 kazam
+kdenlive
 
 clamav
 clamav-daemon

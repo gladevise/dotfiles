@@ -20,6 +20,7 @@ lazygit
 
 neovim
 tmux
+
 fonts-powerline
 fonts-firacode
 
@@ -52,3 +53,6 @@ clamav-daemon
 clamtk
 libclamunrar9
 gufw
+
+openssh-client
+openssh-server

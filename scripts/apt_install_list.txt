@@ -24,7 +24,6 @@ tmux
 fonts-powerline
 fonts-firacode
 
-silversearcher-ag
 sysstat
 htop
 iftop

@@ -69,6 +69,10 @@ alias bs='browser-sync start --server --files "*, ./**/*.css, ./**/*.js"'
 # pdm aliases
 alias pr='pdm run'
 
+# youtube-dl aliases
+alias ydl='youtube-dl'
+alias ydlb='youtube-dl -f bestvideo+bestaudio'
+
 # create directory and file at once
 mkt(){
   mkdir -p "$(dirname "$1")" && touch "$1" ;

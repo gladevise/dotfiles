@@ -37,6 +37,7 @@ wget
 ncdu
 nnn
 rename
+unrar
 
 gimp
 inkscape

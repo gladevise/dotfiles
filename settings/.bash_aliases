@@ -43,6 +43,9 @@ alias tarxzc='tar -Jcvf'
 alias targzx='tar -zxvf'
 alias targzc='tar -zcvf'
 
+# unrar command aliases
+alias rarx='unrar x'
+
 # ROS command aliases
 alias cm='catkin_make'
 alias cs='source ~/catkin_ws/devel/setup.bash'

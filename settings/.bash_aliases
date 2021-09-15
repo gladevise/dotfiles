@@ -49,7 +49,7 @@ alias rarx='unrar x'
 # ROS command aliases
 alias cm='catkin_make'
 alias cs='source ~/catkin_ws/devel/setup.bash'
-alias rosmon='nodemon -w "./src" -x "catkin_make" -e "hpp,cpp,xml"'
+alias rosmon='nodemon -w "./src" -x "catkin_make -DCMAKE_EXPORT_COMPILE_COMMANDS=1" -e "hpp,cpp,xml"'
 
 # C++ project aliases
 alias cppmon='nodemon -w "../" -x "make -j8" -e "hpp,cpp"'

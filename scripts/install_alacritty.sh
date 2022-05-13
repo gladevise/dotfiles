@@ -27,19 +27,17 @@ fi
 mkdir -p ~/Apps
 cd ~/Apps
 
-# Download latest source
-latest_version_tag=$(get_github_latest_release_tag 'alacritty/alacritty')
-wget https://github.com/alacritty/alacritty/archive/refs/tags/$latest_version_tag.zip -O alacritty.zip
-
 if [[ -d ./alacritty ]];then
   echo 'file exists'
   rm -rf alacritty
 fi
 
-unzip ./alacritty.zip -d alacritty
-shopt -s dotglob #hidden fileをmvで移動させるため
-mv ./alacritty/*/** ./alacritty/
+# Clone repository
+git clone https://github.com/alacritty/alacritty
 cd alacritty
+#chekcout latest version
+latest_version_tag=$(get_github_latest_release_tag 'alacritty/alacritty')
+git checkout $latest_version_tag
 
 # check rustup & cargo installation
 if [[  $(command -v rustup)  ]] && [[ $(command -v cargo) ]]; then
@@ -79,6 +77,7 @@ sudo update-desktop-database
 # add man
 sudo mkdir -p /usr/local/share/man/man1
 gzip -c extra/alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz > /dev/null
+gzip -c extra/alacritty-msg.man | sudo tee /usr/local/share/man/man1/alacritty-msg.1.gz > /dev/null
 
 # add alacritty automatic completions
 ALACRITTY_COMPLETION='source ~/Apps/alacritty/extra/completions/alacritty.bash'

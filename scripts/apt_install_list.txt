@@ -8,14 +8,8 @@ exuberant-ctags
 
 python3-pip
 python3-venv
-python3-notebook
-jupyter
-jupyter-core
-python3-neovim
 
 git
-git-flow
-gitk
 lazygit
 
 neovim
@@ -50,7 +44,6 @@ kdenlive
 
 clamav
 clamav-daemon
-clamtk
 libclamunrar9
 gufw
 

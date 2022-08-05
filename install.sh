@@ -22,7 +22,7 @@ bash ./scripts/install_yarn.sh
 bash ./scripts/install_npm.sh
 
 # create nvim_env
-bash ./scripts/create_nvim_env.sh
+bash ./scripts/install_nvim.sh
 
 # link dotfiles
 bash ./scripts/link.sh

@@ -5,6 +5,9 @@ alias i=nvim
 alias aptupg='sudo apt update && apt list --upgradable && sudo apt upgrade -y'
 alias lg=lazygit
 
+# sudo nvim
+alias sdv='sudo -E -s nvim'
+
 # exa aliases
 if [[ $(command -v exa) ]]; then
   alias e='exa --icons'
@@ -58,10 +61,10 @@ alias cpptest='nodemon -w "../" -x "make -j8 && make test" -e "hpp,cpp" -q --spa
 # Node command aliases
 alias ni='npm install'
 alias nr='npm run'
-alias nrd='npm run develop'
+alias nrd='npm run dev'
 alias nrb='npm run build'
-alias nrs='npm run serve'
-alias yad='yarn develop'
+alias nrs='npm run start'
+alias yad='yarn dev'
 alias yab='yarn build'
 alias yas='yarn start'
 alias bs='browser-sync start --server --files "*, ./**/*.css, ./**/*.js"'

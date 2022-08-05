@@ -1,11 +1,6 @@
-neovim
-htmlhint
 eslint
-browser-sync
+serve
 nodemon
 npm-check-updates
 lighthouse
-textlint
-textlint-rule-preset-ja-technical-writing
-
 @jarred/git-peek

@@ -43,17 +43,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'othree/eregex.vim'
 " regexのプレビューが効かなくなった。完全にPerlライクに書けるわけでもなかった
 
-" NERDTree
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
-
 " カラースキーム
 Plug 'joshdick/onedark.vim' " Dark Theme
 Plug 'itchyny/lightline.vim' " status line
-
-"devicons
-Plug 'ryanoasis/vim-devicons', { 'on': 'NERDTreeToggle' }
-
 
 " 空白の可視化
 Plug 'ntpeters/vim-better-whitespace'
@@ -61,75 +53,13 @@ Plug 'ntpeters/vim-better-whitespace'
 " インデント可視化
 Plug 'Yggdroot/indentLine'
 
-" あいまい検索
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-
 " ルートディレクトリを.gitのあるディレクトリに変更する
 Plug 'airblade/vim-rooter'
-
-" Git関連
-" Gitと連携する
-Plug 'tpope/vim-fugitive'
-
-" Git差分表示
-Plug 'airblade/vim-gitgutter'
 
 " 多言語対応
 Plug 'sheerun/vim-polyglot'
 
-" Linter
-Plug 'dense-analysis/ale'
-Plug 'maximbaz/lightline-ale'
-
-
-" vim-lsp関連
-" Plug 'prabirshrestha/async.vim'
-" Plug 'prabirshrestha/vim-lsp'
-" Plug 'mattn/vim-lsp-settings'
-" Plug 'thomasfaingnaert/vim-lsp-snippets'
-" Plug 'thomasfaingnaert/vim-lsp-ultisnips'
-
-" 入力補完
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'on': []}
-" Plug 'prabirshrestha/asyncomplete.vim'
-" Plug 'prabirshrestha/asyncomplete-lsp.vim'
-
-" "highlight関連"
-" highlight styled-components tag literals
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-"cxx highlighter
-" Plug 'jackguo380/vim-lsp-cxx-highlight'
-
-" highlight jsx
-" Plug 'maxmellon/vim-jsx-pretty' " vim-polyglotをインストールすれば自動的に入る
-
-" semantic-highlight
-" styled-componentsにおけるtag literals内のプレースホルダー内のCSSに色をつけてくれるかなと思ったけど無理だった。
-" Plug 'jaxbot/semantic-highlight.vim'
-
-
-" javascript syntax
-Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
-" javascript向けsyntax file
-Plug 'othree/yajs.vim'
-" ecma script 関連のsyntax file
-Plug 'othree/es.next.syntax.vim'
-" JavaScriptライブラリ向けのsyntax file
-Plug 'othree/javascript-libraries-syntax.vim'
-
-" Snippet
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-
-" emmet-vin
-Plug 'mattn/emmet-vim'
-
-" Terminal & REPL
-Plug 'kassio/neoterm'
-
 " コメントアウト
-" Plug 'tpope/vim-commentary' " コンテキストを解釈できない
 Plug 'tomtom/tcomment_vim' " コンテキストを解釈してコメントアウトしてくれる
 
 " Undo
@@ -153,15 +83,8 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & npm install'  }
 
-" session manager
-Plug 'tpope/vim-obsession'
-
 " advanced yank history
 Plug 'svermeulen/vim-yoink'
-
-
-" ctags
-Plug 'majutsushi/tagbar', {'on': 'TagbarToggle'}
 
 call plug#end()
 

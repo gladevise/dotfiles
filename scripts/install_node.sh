@@ -4,8 +4,13 @@ pushd $PWD
 cd `dirname $0`
 echo $PWD
 
+source ./utils.sh
+
+latest_version_tag=$(get_github_latest_release_tag 'nvm-sh/nvm')
+echo "latest version: $latest_version_tag"
+
 # install nvm & Node.js & npm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/$latest_version_tag/install.sh" | bash
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

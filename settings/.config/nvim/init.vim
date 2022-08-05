@@ -97,8 +97,8 @@ augroup load_us_insert
 augroup END
 
 " Pythonパスの設定
-let g:python_host_prog  = $HOME . '/Env/python_env/nvim_env/bin/python'
-let g:python3_host_prog  = $HOME . '/Env/python_env/nvim_env/bin/python3'
+let g:python_host_prog  = '/usr/bin/python'
+let g:python3_host_prog  = '/usr/bin/python3'
 
 """ "plugin settings" """
 " "lightline settings"

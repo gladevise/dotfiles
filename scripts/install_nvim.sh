@@ -13,6 +13,8 @@ else
   curl -L -o ~/dotfiles/.cache/nvim --create-dirs https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
   chmod 755 ~/dotfiles/.cache/nvim
   sudo cp ~/dotfiles/.cache/nvim /usr/local/bin/nvim
+  pip3 install --user pynvim
+  npm install -g neovim
 fi
 
 

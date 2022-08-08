@@ -1,5 +1,5 @@
 #!/bin/bash
-# Install cargo packages
+
 pushd $PWD
 cd `dirname $0`
 echo $PWD

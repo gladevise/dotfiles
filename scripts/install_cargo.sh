@@ -1,8 +1,23 @@
 #!/bin/bash
-# Install cargo packages
 pushd $PWD
 cd `dirname $0`
 echo $PWD
+
+declare -a packages
+
+packages=(
+  # CLI Tools
+  exa
+  ripgrep
+  bat
+  fd-find
+  bottom
+  tealdeer
+  starship
+
+  # package updater
+  cargo-update
+)
 
 # check rustup & cargo installation
 if [[  $(command -v rustup)  ]] && [[ $(command -v cargo) ]]; then
@@ -20,7 +35,7 @@ $HOME/.cargo/bin/rustup update stable
 # install build dependencies
 sudo apt install -y libssl-dev
 # install cargo applications
-cat ./cargo_install_list.txt  | xargs $HOME/.cargo/bin/cargo install -j4
+$HOME/.cargo/bin/cargo install -j4 ${packages[@]}
 
 # install alacritty
 bash ./install_alacritty.sh

@@ -1,5 +1,4 @@
 #!/bin/bash
-# install apt applications
 
 pushd $PWD
 cd `dirname $0`
@@ -41,8 +40,75 @@ else
   sudo add-apt-repository -y ppa:kdenlive/kdenlive-stable
 fi
 
+declare -a packages
+
+packages=(
+  # build tools
+  build-essential
+  cmake
+  automake
+  libclang-dev
+  libtool
+  libboost-all-dev
+  exuberant-ctags
+
+  # python
+  python3-pip
+  python3-venv
+
+  # git
+  git
+  lazygit
+
+  # terminal tools
+  tmux
+
+  # fonts
+  fonts-powerline
+  fonts-firacode
+
+  # system monitor
+  sysstat
+  iftop
+  neofetch
+
+  # CLI tools
+  xsel
+  curl
+  wget
+  ncdu
+  nnn
+  rename
+  unrar
+
+  # GUI tools
+  meld
+  gimp
+  inkscape
+  vlc
+  flameshot
+  copyq
+  obs-studio
+  kazam
+  kdenlive
+
+  # Security
+  clamav
+  clamav-daemon
+  libclamunrar9
+  gufw
+
+  # SSH
+  openssh-client
+  openssh-server
+
+  # Gnome tools
+  gnome-tweak-tool
+)
+
+
 # update & upgrade
 sudo apt update && sudo apt upgrade -y
-cat ./apt_install_list.txt  | xargs sudo apt install -y
+sudo apt install -y ${packages[@]}
 
 popd

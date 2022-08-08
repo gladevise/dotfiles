@@ -1,8 +1,0 @@
-exa
-ripgrep
-bat
-fd-find
-bottom
-tealdeer
-starship
-cargo-update

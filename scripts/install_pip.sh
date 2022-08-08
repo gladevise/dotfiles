@@ -5,6 +5,31 @@ pushd $PWD
 cd `dirname $0`
 echo $PWD
 
-pip3 install --user -r ./pip_install_list.txt
+declare -a packages
+
+packages=(
+
+  # Linter
+  flake8
+  pylint
+
+  # Formatter
+  black
+  jedi
+
+  # build tools
+  wheel
+
+  # package updater
+  pipdeptree
+
+  # CLI tools
+  yt-dlp
+  pdm
+  tmuxp
+  powerline-status
+)
+
+pip3 install --user ${packages[@]}
 
 popd

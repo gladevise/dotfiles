@@ -1,6 +1,0 @@
-eslint
-serve
-nodemon
-npm-check-updates
-lighthouse
-@jarred/git-peek

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/local/bin/alacritty
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Alacritty
+Name=Alacritty
+Comment[en_US]=auto start alacritty
+Comment=auto start alacritty

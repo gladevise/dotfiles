@@ -401,6 +401,12 @@ colors:
 #  program: /bin/bash
 #  args:
 #    - --login
+shell:
+ program: /bin/bash
+ args:
+   - --login
+   - -c
+   - "tmux attach || tmux"
 
 # Startup directory
 #

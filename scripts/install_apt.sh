@@ -103,7 +103,8 @@ packages=(
   openssh-server
 
   # Gnome tools
-  gnome-tweak-tool
+  # gnome-tweak-tool # change to gnome-tweaks since Ubuntu 22.04
+  gnome-tweaks
 )
 
 

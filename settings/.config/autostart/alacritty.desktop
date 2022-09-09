@@ -8,3 +8,4 @@ Name[en_US]=Alacritty
 Name=Alacritty
 Comment[en_US]=auto start alacritty
 Comment=auto start alacritty
+X-GNOME-Autostart-Delay=10

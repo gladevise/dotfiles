@@ -1,0 +1,356 @@
+{
+  // -----------------------------------
+  // * General Settings
+  // -----------------------------------
+  //
+  // Editor Settings
+  "editor.fontFamily": "'Fira Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true, // tabを押すとスペースが挿入される
+  "editor.wordWrap": "on", // 文字を折り返す
+  "editor.formatOnSave": true,
+  // bracket pair settings
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  // apply formatter
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "prettier.singleQuote": true,
+  // trim lines
+  "files.trimFinalNewlines": true, // 有効にすると、ファイルの保存時に最終行以降の新しい行をトリミングします。
+  "files.trimTrailingWhitespace": true, // 有効にすると、ファイルの保存時に末尾の空白をトリミングします。
+  "files.associations": {
+    "*.mdx": "markdown", // mdxをmarkdownとして扱う
+    "*.info": "ini", // infoをiniとして扱う
+    "*.env*": "env" // .env.local, .env.developなどを.envとして扱う
+  },
+  // ! deprecated "editor.renameOnType": true, //対応するタグを自動的にrenameする(HTMLのみ対応)
+  "editor.linkedEditing": true,
+  // for further details https://code.visualstudio.com/updates/v1_44#_synced-regions
+  // この辺のIssueが解決されたらJSXに実装される可能性はある
+  // https://github.com/microsoft/vscode/issues/94316
+  // https://github.com/microsoft/vscode/issues/85707
+  "editor.autoClosingQuotes": "always", // auto close tag literal(``)
+  // QuickOpenから開くときのみpreviewモードを使わない
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  // quick openからフォルダを開くときは新しいwindowにする
+  "window.openFoldersInNewWindow": "on",
+  // "workbench.editor.enablePreviewFromCodeNavigation": true,
+  // suggestion settings
+  "editor.tabCompletion": "on", // snippetでtab stopが使えるようになる
+  "editor.wordBasedSuggestions": true,
+  "editor.suggest.showKeywords": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true, // コメント入力時にsuggestを表示する
+    "strings": true // 文字列を入力時にsuggestを表示する
+  },
+  "editor.quickSuggestionsDelay": 0, // Suggestionが表示されるまでのディレイ
+  "editor.snippetSuggestions": "top", // snippetが常にSuggestionリストの一番上に来るようにする
+  "editor.suggest.snippetsPreventQuickSuggestions": false, // false: tab stop中に入力補完を使う
+  "editor.acceptSuggestionOnCommitCharacter": false, // dotでsuggestionを選択しないようにする
+  "editor.parameterHints.enabled": true,
+  "[cpp]": {
+    // "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
+    "cSpell.fixSpellingWithRenameProvider": true,
+    "cSpell.advanced.feature.useReferenceProviderWithRename": true,
+    "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/",
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.formatOnSave": true
+  },
+  // highlight
+  "editor.semanticHighlighting.enabled": "configuredByTheme",
+  // Alt Keyをバインドするため、デフォルトの動作を無効化する
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+  // Terminal settings
+  "terminal.external.linuxExec": "alacritty",
+  "terminal.integrated.copyOnSelection": true, // Terminalで範囲選択した部分を自動的にコピーする
+  "terminal.integrated.fontFamily": "'Fira Code', monospace",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose", // 終了時にteminalのプロセスを保存
+  "terminal.integrated.shellIntegration.enabled": false, //コマンドの実行結果のステータスをVSCodeで表示しない(starshipを使いたいので)
+  // Auto Import Settings
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // Emmet Settings
+  "emmet.triggerExpansionOnTab": false, // Tab keyでEmmetを展開する
+  "emmet.showSuggestionsAsSnippets": false, // EmmetをSuggestion Listに表示させるかどうか
+  "emmet.showExpandedAbbreviation": "never",
+  // Emmetを使用するファイルタイプを指定する
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "vue-html": "html",
+    "razor": "html",
+    "plaintext": "pug"
+  },
+  // Breadcrumbs Settings
+  "breadcrumbs.enabled": true, // パンくずリストを有効にする
+  // explorer settings
+  // "workbench.list.keyboardNavigation": "filter", // Explorerでの検索ではマッチしたファイルのみを表示する
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // list navigation
+  "workbench.list.automaticKeyboardNavigation": false,
+  // git Settings
+  "git.autofetch": true,
+  // -----------------------------------
+  // * Extension Settings
+  // -----------------------------------
+  // One Dark Pro settings
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorCustomizations": {
+    "editor.findMatchHighlightBackground": "#e5c07b40"
+  },
+  // vscodevim settings
+  "vim.debug.loggingLevelForConsole": "debug", // Consoleに表示するvscodevimのログレベルを調整する
+  "vim.startInInsertMode": false, // Normal Modeで開始する
+  "vim.enableNeovim": true, // NeoVimを有効にする
+  "vim.neovimPath": "/usr/local/bin/nvim", // NeoVim実行ファイルまでのパスを指定する
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true, // yank時にシステムのクリップボードにコピー
+  "vim.visualstar": true, // カーソル上にあるワードを"*"で検索
+  "vim.useCtrlKeys": true, // VSCodeのCtrlキーを使った操作をVimのもので上書きする
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true, // yank時にハイライトする
+  "vim.highlightedyank.duration": 400, // yankハイライト時間を調整する
+  // "vim.statusBarColorControl": true,
+  // "vim.statusBarColors.normal": [
+  //   "#8FBCBB",
+  //   "#000"
+  // ],
+  // "vim.statusBarColors.insert": "#BF616A",
+  // "vim.statusBarColors.visual": "#B48EAD",
+  // "vim.statusBarColors.visualline": "#B48EAD",
+  // "vim.statusBarColors.visualblock": "#A3BE8C",
+  // "vim.statusBarColors.replace": "#D08770",
+  // "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  // "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  // "vim.statusBarColors.easymotionmode": "#007ACC",
+  // "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  // "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "vim.leader": "<space>",
+  "vim.handleKeys": { "<c-n>": true },
+  // InsertModeのキーバインドを設定する
+  // "vim.insertModeKeyBindings": [{ "before": ["j", "j"], "after": ["<C-[>"] }],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    { "before": ["j", "j"], "after": ["<C-[>"] }
+  ],
+  // NormalModeのキーバインドを設定する
+  "vim.normalModeKeyBindings": [
+    {
+      // <leader> w で保存
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      // <leader> x でエディタを閉じる
+      "before": ["<leader>", "x"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // window resize
+    {
+      "before": ["<c-w>", "+"],
+      "commands": ["workbench.action.increaseViewSize"]
+    },
+    {
+      "before": ["<c-w>", "-"],
+      "commands": ["workbench.action.decreaseViewSize"]
+    },
+    {
+      // yank file
+      "before": ["<leader>", "y"],
+      "commands": [":%y"]
+    },
+    {
+      // create new file
+      "before": ["<leader>", "n"],
+      "commands": [":tabe"]
+    },
+    {
+      // create new file
+      "before": ["<c-s-e>"],
+      // "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // サーチハイライトをトグルする
+    { "before": ["<ESC>", "<ESC>"], "commands": [":set hlsearch!"] },
+    // 移動関連
+    // 行移動
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] },
+    // Lで行末へ
+    { "before": ["L"], "after": ["$"] },
+    // Hで行頭へ
+    { "before": ["H"], "after": ["^"] },
+    // Go to problem
+    { "before": ["g", "j"], "commands": ["editor.action.marker.nextInFiles"] },
+    { "before": ["g", "k"], "commands": ["editor.action.marker.prevInFiles"] },
+    // Split window
+    { "before": ["<c-w>", "_"], "after": ["<c-w>", "v"] },
+    { "before": ["<c-w>", "-"], "after": ["<c-w>", "s"] },
+    // easymotion
+    {
+      "before": ["<leader>", "s"],
+      "after": ["<leader>", "<leader>", "2", "s"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d", "j", "k"]
+    },
+    // MarkdownPreviewを実行する
+    {
+      "before": ["<leader>", "m", "p"],
+      "commands": ["markdown.showPreviewToSide"]
+    },
+    // Replace
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
+    // Rename Symbol
+    {
+      "before": ["<leader>", "R"],
+      "commands": ["editor.action.rename"]
+    },
+    // insert line
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["editor.action.insertLineAfter"]
+    },
+    {
+      "before": ["<leader>", "O"],
+      "commands": ["editor.action.insertLineBefore"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // 移動関連
+    // 行移動
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] },
+    // Lで行末へ
+    { "before": ["L"], "after": ["$"] },
+    // Hで行頭へ
+    { "before": ["H"], "after": ["^"] },
+    // easymotion
+    {
+      "before": ["<leader>", "s"],
+      "after": ["<leader>", "<leader>", "2", "s"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["<leader>", "<leader>", "<leader>", "b", "d", "j", "k"]
+    }
+  ],
+  "vim.operatorPendingModeKeyBindings": [
+    // 移動関連
+    // 行移動
+    { "before": ["j"], "after": ["g", "j"] },
+    { "before": ["k"], "after": ["g", "k"] },
+    // Lで行末へ
+    { "before": ["L"], "after": ["$"] },
+    // Hで行頭へ
+    { "before": ["H"], "after": ["^"] }
+  ],
+  // macros settings
+  "macros": {
+    "closeTerminal": [
+      "workbench.action.toggleMaximizedPanel",
+      "workbench.action.closePanel"
+    ]
+  },
+  // clip ring settings
+  "clipring.maxRingItems": 10,
+  "clipring.backupClipboard": true,
+  "clipring.itemToClipboardOnPaste": true,
+  // // All Autocomplete settings
+  // "AllAutocomplete.showCurrentDocument": false, // real-time mode(the plugin tries to update the index on each addition/deletion.)
+  // markdown-all-in-one settings
+  "markdown.extension.preview.autoShowPreviewToSide": false,
+  // markdownlint settings
+  "markdownlint.config": {
+    "MD034": false, // bare urlに<>を追加するかどうか
+    "MD026": false, // 文末の!を取り除かない
+    "MD040": false // コードブロックにlanguageを指定しないことを許可する
+  },
+  "markdownlint.run": "onSave",
+  // spellright settings
+  // "spellright.language": ["English_American"],
+  // "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  // launguage settings
+
+  // git-graph settings
+  "git-graph.keyboardShortcut.scrollToHead": "UNASSIGNED",
+  // Other settings auto inserted by gui
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.views.repositories.files.layout": "list",
+  "gitlens.views.branches.branches.layout": "list",
+  "cmake.configureOnOpen": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.db": "default"
+  },
+  "window.zoomLevel": 1,
+  "sync.forceUpload": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "githubPullRequests.fileListLayout": "tree",
+  "redhat.telemetry.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.inlineSuggest.enabled": true,
+  "git.confirmSync": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "push:command"
+  ],
+  "githubPullRequests.pullBranch": "never",
+  "git.enableSmartCommit": true
+  // "workbench.startupEditor": "none"
+}

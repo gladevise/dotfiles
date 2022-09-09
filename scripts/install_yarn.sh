@@ -1,5 +1,6 @@
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update
-sudo apt install -y --no-install-recommends yarn
-yarn --version
+# The following method does not work because pubkey is no longer available since Ubuntu 22.04.
+# curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+# echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+# sudo apt update
+# sudo apt install -y --no-install-recommends yarn
+# yarn --version

@@ -16,9 +16,9 @@ bash ./scripts/install_snap.sh
 # install cargo applications
 bash ./scripts/install_cargo.sh
 
-# install nvm & Node.js & npm & yarn
+# install nvm & Node.js & JavaScript packages
 bash ./scripts/install_node.sh
-bash ./scripts/install_yarn.sh
+# bash ./scripts/install_yarn.sh
 bash ./scripts/install_npm.sh
 
 # create nvim_env

@@ -19,6 +19,9 @@ packages=(
 
   # Package updater
   npm-check-updates
+
+  # Package manager
+  yarn
 )
 
 export NVM_DIR="$HOME/.nvm"

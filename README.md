@@ -2,6 +2,12 @@
 
 ## Install
 
+Install git & curl
+
+```bash
+sudo apt install git curl
+```
+
 Clone repository to home directory.
 
 ```bash

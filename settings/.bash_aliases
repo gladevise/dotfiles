@@ -29,6 +29,7 @@ fi
 
 alias tm=tmux
 alias tma='tmux attach'
+alias tml='tmuxp load -y'
 
 # git command aliases
 alias gia='git add'

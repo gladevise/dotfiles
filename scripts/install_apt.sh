@@ -58,7 +58,6 @@ packages=(
 
   # git
   git
-  # lazygit
 
   # terminal tools
   tmux
@@ -89,7 +88,6 @@ packages=(
   flameshot
   copyq
   obs-studio
-  kazam
   kdenlive
 
   # Security
@@ -105,6 +103,7 @@ packages=(
   # Gnome tools
   # gnome-tweak-tool # change to gnome-tweaks since Ubuntu 22.04
   gnome-tweaks
+  gnome-shell-extensions
 )
 
 

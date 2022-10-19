@@ -62,20 +62,10 @@ alias cpptest='nodemon -w "../" -x "make -j8 && make test" -e "hpp,cpp" -q --spa
 # Node command aliases
 alias ni='npm install'
 alias nr='npm run'
-alias nrd='npm run dev'
-alias nrb='npm run build'
-alias nrs='npm run start'
-alias yad='yarn dev'
-alias yab='yarn build'
-alias yas='yarn start'
-alias bs='browser-sync start --server --files "*, ./**/*.css, ./**/*.js"'
+alias ya='yarn'
 
 # pdm aliases
 alias pr='pdm run'
-
-# youtube-dl aliases
-alias ydl='youtube-dl'
-alias ydlb='youtube-dl -f bestvideo+bestaudio'
 
 # create directory and file at once
 mkt(){

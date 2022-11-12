@@ -3,7 +3,6 @@ alias python=python3
 alias py=python3
 alias i=nvim
 alias aptupg='sudo apt update && apt list --upgradable && sudo apt upgrade -y'
-alias lg=lazygit
 
 # sudo nvim
 alias sdv='sudo -E -s nvim'

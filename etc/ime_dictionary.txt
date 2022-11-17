@@ -1,4 +1,4 @@
-あんぐぁr	Angular	名詞	
+あんぐぁr	Angular	固有名詞	
 あのゔぁ	Anova	名詞	
 あっpsyんc	AppSync	名詞	
 bcぉおck	BCloock	名詞	
@@ -36,10 +36,12 @@ jsこんふぃg	jsconfig.json	名詞
 みcろそft	Microsoft	名詞	
 みんdめいsてr	MindMeister	名詞	
 もびぇ	Mobile	名詞	
+もねyふぉrわrd	Money Forward	名詞	
 ねおゔぃm	NeoVim	名詞	
+ねx	Next.js	名詞	
 ねxt	Next.js	名詞	
 のこで	NoCode	名詞	
-のでjs	Node.js	名詞	
+ので	Node.js	名詞	
 のちおn	Notion	名詞	
 ぱcかげ	package.json	名詞	
 pれっちえr	Prettier	名詞	
@@ -47,12 +49,18 @@ pれっちえr	Prettier	名詞
 pyてょn	Python	名詞	
 ぱいそん	Python	名詞	
 くいck	Quick Start 	名詞	
+らsぴ	Raspberry Pi	名詞	
 れあct	React	名詞	
 れかptちゃ	reCaptcha	名詞	
+れかptちゃ	reCAPTCHA	名詞	
+ろぼts	robots.txt	名詞	
 さっs	Sass	名詞	
 scらpy	Scrapy	名詞	
 scっs	SCSS	名詞	
 せぇにうm	Selenium	名詞	
+sw	ServiceWorker	名詞	
+せrゔぃせをrけr	ServiceWorker	名詞	
+してまp	sitemap.xml	名詞	
 sつぢお	Studio	名詞	
 styぇd-こmぽねんts	styled-components	名詞	
 tsこんふぃg	tsconfig.json	名詞	
@@ -74,5 +82,6 @@ vつべr	VTuber	名詞
 xぱth	XPATH	名詞	
 ぜんきt	Zenkit	名詞	
 きんとれ	筋トレ	名詞	
+こはいかに	此は如何に	サジェストのみ	
 やけ	自棄	名詞	
 だおれ	倒れ	名詞	

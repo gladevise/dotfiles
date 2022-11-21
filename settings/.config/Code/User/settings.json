@@ -11,13 +11,19 @@
   "editor.insertSpaces": true, // tabを押すとスペースが挿入される
   "editor.wordWrap": "on", // 文字を折り返す
   "editor.formatOnSave": true,
+  // zoom settings
+  "editor.mouseWheelZoom": true,
+  "window.zoomLevel": 1,
   // bracket pair settings
   "editor.guides.bracketPairs": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairsHorizontal": "active",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   // apply formatter
-  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.sortImports": true
+  },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -330,7 +336,6 @@
     "*.ipynb": "jupyter-notebook",
     "*.db": "default"
   },
-  "window.zoomLevel": 1,
   "sync.forceUpload": true,
   "notebook.cellToolbarLocation": {
     "default": "right",

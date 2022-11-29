@@ -1357,5 +1357,10 @@
     "key": "enter",
     "command": "-editor.action.nextMatchFindAction",
     "when": "editorFocus && findInputFocussed"
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
   }
 ]

@@ -25,6 +25,7 @@ gぁでゔぃせ	gladevise	名詞
 gらphql	GraphQL	名詞	
 html	HTML	名詞	
 ふb	Hub	名詞	
+いんでぇっdb	IndexedDB	名詞	
 js	JavaScript	名詞	
 じゃゔぁScりpt	JavaScript	名詞	
 じゃばすくりぷと	JavaScript	名詞	
@@ -81,6 +82,7 @@ vつべr	VTuber	名詞
 まど	Windows	名詞	
 xぱth	XPATH	名詞	
 ぜんきt	Zenkit	名詞	
+このごにおよんで	この期に及んで	サジェストのみ	
 きんとれ	筋トレ	名詞	
 こはいかに	此は如何に	サジェストのみ	
 やけ	自棄	名詞	

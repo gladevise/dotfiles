@@ -44,6 +44,8 @@ jsこんふぃg	jsconfig.json	名詞
 のこで	NoCode	名詞	
 ので	Node.js	名詞	
 のちおn	Notion	名詞	
+ない	NovelAI	名詞	
+のゔぇぁい	NovelAI	名詞	
 ぱcかげ	package.json	名詞	
 pれっちえr	Prettier	名詞	
 ぷっぺてえr	Puppeteer	名詞	
@@ -62,6 +64,8 @@ scっs	SCSS	名詞
 sw	ServiceWorker	名詞	
 せrゔぃせをrけr	ServiceWorker	名詞	
 してまp	sitemap.xml	名詞	
+sd	Stable Diffusion	名詞	
+sたbぇ	Stable Diffusion	名詞	
 sつぢお	Studio	名詞	
 styぇd-こmぽねんts	styled-components	名詞	
 tsこんふぃg	tsconfig.json	名詞	

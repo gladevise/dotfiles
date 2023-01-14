@@ -1378,6 +1378,11 @@
   //   // "command": "cursorDown",
   //   "when": "markdownPreviewFocus"
   // }
+  // Jump to Previous Editor
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.focusPreviousGroup"
+  },
   // FindReplace
   {
     "key": "ctrl+alt+n",

@@ -26,4 +26,5 @@ bash ./scripts/install_nvim.sh
 # link dotfiles
 bash ./scripts/link.sh
 
+
 popd

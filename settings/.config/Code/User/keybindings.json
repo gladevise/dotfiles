@@ -1412,5 +1412,31 @@
     "key": "tab",
     "command": "-acceptSelectedSuggestion",
     "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  // Run build Task
+  {
+    "key": "ctrl+alt+b",
+    "command": "workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  // Run task
+  {
+    "key": "ctrl+alt+r",
+    "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "-reactSnippets.search",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "-revealFileInOS",
+    "when": "!editorFocus"
   }
 ]

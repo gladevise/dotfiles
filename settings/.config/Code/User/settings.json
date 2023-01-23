@@ -256,7 +256,11 @@
     {
       "before": ["<leader>", "O"],
       "commands": ["editor.action.insertLineBefore"]
-    }
+    },
+    // Undo & Redo
+    // for fixing https://github.com/VSCodeVim/Vim/issues/8157
+    { "before": ["u"], "commands": ["undo"] },
+    { "before": ["c-r"], "commands": ["redo"] }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     // 移動関連

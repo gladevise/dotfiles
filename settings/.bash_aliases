@@ -26,6 +26,18 @@ if [[ $(command -v bat) ]]; then
   alias cat=bat
 fi
 
+if [[ $(command -v fd) ]]; then
+  alias fdh='fd --hidden --no-ignore'
+fi
+
+if [[ $(command -v rg) ]]; then
+  alias rgh='rg --hidden --no-ignore'
+fi
+
+if [[ $(command -v ug) ]]; then
+  alias ugh='ug --hidden'
+fi
+
 alias tm=tmux
 alias tma='tmux attach'
 alias tml='tmuxp load -y'

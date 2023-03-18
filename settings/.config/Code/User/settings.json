@@ -31,6 +31,9 @@
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "prettier.singleQuote": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
   // trim lines
   "files.trimFinalNewlines": true, // 有効にすると、ファイルの保存時に最終行以降の新しい行をトリミングします。
   "files.trimTrailingWhitespace": true, // 有効にすると、ファイルの保存時に末尾の空白をトリミングします。

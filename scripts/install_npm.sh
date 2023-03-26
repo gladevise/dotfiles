@@ -21,7 +21,7 @@ packages=(
   npm-check-updates
 
   # Package manager
-  yarn
+  pnpm
 )
 
 export NVM_DIR="$HOME/.nvm"

@@ -20,6 +20,9 @@ echo $PWD
 ./scripts/install_node.sh
 ./scripts/install_npm.sh
 
+# install AppImage
+./scripts/install_appimages.sh
+
 # create nvim_env
 ./scripts/install_nvim.sh
 

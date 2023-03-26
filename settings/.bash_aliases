@@ -84,5 +84,5 @@ mkt(){
 }
 
 upg(){
-  bash ~/dotfiles/scripts/upgrade.sh
+  ~/dotfiles/scripts/upgrade.sh
 }

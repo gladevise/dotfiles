@@ -1,14 +1,14 @@
 pushd $PWD
 cd `dirname $0`
 
-bash ./upgrade_apt.sh
+./upgrade_apt.sh
 
-bash ./upgrade_pip.sh
+./upgrade_pip.sh
 
-bash ./upgrade_cargo.sh
+./upgrade_cargo.sh
 
-bash ./install_node.sh
+./install_node.sh
 
-bash ./upgrade_npm.sh
+./upgrade_npm.sh
 
 popd

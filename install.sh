@@ -5,26 +5,26 @@ cd `dirname $0`
 echo $PWD
 
 # Install apt packages
-bash ./scripts/install_apt.sh
+./scripts/install_apt.sh
 
 # install pip applications
-bash ./scripts/install_pip.sh
+./scripts/install_pip.sh
 
 # install snap applications
-bash ./scripts/install_snap.sh
+./scripts/install_snap.sh
 
 # install cargo applications
-bash ./scripts/install_cargo.sh
+./scripts/install_cargo.sh
 
 # install nvm & Node.js & JavaScript packages
-bash ./scripts/install_node.sh
-bash ./scripts/install_npm.sh
+./scripts/install_node.sh
+./scripts/install_npm.sh
 
 # create nvim_env
-bash ./scripts/install_nvim.sh
+./scripts/install_nvim.sh
 
 # link dotfiles
-bash ./scripts/link.sh
+./scripts/link.sh
 
 
 popd

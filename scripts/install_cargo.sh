@@ -38,9 +38,9 @@ sudo apt install -y libssl-dev
 $HOME/.cargo/bin/cargo install -j4 ${packages[@]}
 
 # install alacritty
-bash ./install_alacritty.sh
+./install_alacritty.sh
 
 # install starship
-bash ./install_starship.sh
+./install_starship.sh
 
 popd

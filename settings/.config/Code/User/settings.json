@@ -38,9 +38,13 @@
   "files.trimFinalNewlines": true, // 有効にすると、ファイルの保存時に最終行以降の新しい行をトリミングします。
   "files.trimTrailingWhitespace": true, // 有効にすると、ファイルの保存時に末尾の空白をトリミングします。
   "files.associations": {
-    "*.mdx": "markdown", // mdxをmarkdownとして扱う
-    "*.info": "ini", // infoをiniとして扱う
-    "*.env*": "env" // .env.local, .env.developなどを.envとして扱う
+    // mdxをmarkdownとして扱う
+    "*.mdx": "markdown",
+    // infoをiniとして扱う
+    "*.info": "ini",
+    // .env.local, .env.developなどを.envとして扱う
+    "*.env*": "env",
+    "*.css": "tailwindcss"
   },
   // ! deprecated "editor.renameOnType": true, //対応するタグを自動的にrenameする(HTMLのみ対応)
   "editor.linkedEditing": true,

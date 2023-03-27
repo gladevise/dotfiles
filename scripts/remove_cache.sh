@@ -20,10 +20,10 @@ if [[ $(command -v flatpak) ]]; then
   flatpak uninstall --unused
 fi
 
-if [[ $(command -v pip) ]]; then
+if [[ $(command -v pip3) ]]; then
   # https://pip.pypa.io/en/stable/cli/pip_cache/
   echo 'Removing pip cache...'
-  pip cache purge
+  pip3 cache purge
 fi
 
 if [[ $(command -v npm) ]]; then

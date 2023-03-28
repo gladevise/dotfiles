@@ -69,6 +69,7 @@ sたbぇ	Stable Diffusion	名詞
 sつぢお	Studio	名詞	
 styぇd-こmぽねんts	styled-components	名詞	
 たいlwいんd	TailwindCSS	名詞	
+tailwindcss	TailwindCSS	名詞	
 tsこんふぃg	tsconfig.json	名詞	
 ついったー	Twitter	名詞	
 とぃってr	Twitter	名詞	

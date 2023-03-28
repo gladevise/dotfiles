@@ -13,12 +13,16 @@ foam.foam-vscode
 formulahendry.auto-rename-tag
 formulahendry.code-runner
 geddski.macros
+GitHub.copilot
 GitHub.vscode-pull-request-github
+GraphQL.vscode-graphql
+GraphQL.vscode-graphql-syntax
 Gruntfuggly.todo-tree
 hediet.debug-visualizer
 josetr.cmake-language-support-vscode
 mechatroner.rainbow-csv
 mhutchie.git-graph
+mikestead.dotenv
 mosapride.zenkaku
 ms-azuretools.vscode-docker
 ms-dotnettools.vscode-dotnet-runtime
@@ -38,6 +42,7 @@ mushan.vscode-paste-image
 nico-castell.linux-desktop-file
 PKief.material-icon-theme
 pnp.polacode
+Prisma.prisma
 redhat.vscode-xml
 redhat.vscode-yaml
 ritwickdey.LiveServer

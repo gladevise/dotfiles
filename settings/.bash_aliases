@@ -72,6 +72,8 @@ alias cpptest='nodemon -w "../" -x "make -j8 && make test" -e "hpp,cpp" -q --spa
 
 # Node command aliases
 alias ni='pnpm install'
+alias nu='pnpm up --latest'
+alias nui='pnpm remove'
 alias nr='pnpm run'
 alias nx='pnpm dlx'
 

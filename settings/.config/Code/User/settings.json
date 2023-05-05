@@ -24,6 +24,9 @@
     "source.fixAll": true,
     "source.sortImports": true
   },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -73,6 +76,12 @@
   "editor.suggest.snippetsPreventQuickSuggestions": false, // false: tab stop中に入力補完を使う
   "editor.acceptSuggestionOnCommitCharacter": false, // dotでsuggestionを選択しないようにする
   "editor.parameterHints.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": true
+  },
   "[cpp]": {
     // "editor.wordBasedSuggestions": false,
     "editor.suggest.insertMode": "replace",
@@ -133,6 +142,16 @@
   "workbench.list.automaticKeyboardNavigation": false,
   // git Settings
   "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "push:command"
+  ],
+  "githubPullRequests.fileListLayout": "tree",
+  "githubPullRequests.pullBranch": "never",
+  "git.enableSmartCommit": true,
   // -----------------------------------
   // * Extension Settings
   // -----------------------------------
@@ -352,21 +371,8 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "githubPullRequests.fileListLayout": "tree",
   "redhat.telemetry.enabled": false,
   "liveServer.settings.donotShowInfoMsg": true,
-  "editor.inlineSuggest.enabled": true,
-  "git.confirmSync": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "gitlens.gitCommands.skipConfirmations": [
-    "fetch:command",
-    "stash-push:command",
-    "switch:command",
-    "push:command"
-  ],
-  "githubPullRequests.pullBranch": "never",
-  "git.enableSmartCommit": true
+  "editor.inlineSuggest.enabled": true
   // "workbench.startupEditor": "none"
 }

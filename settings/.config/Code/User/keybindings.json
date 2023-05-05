@@ -2,6 +2,32 @@
 [
   // Remove Default Ctrl + k bindings
   {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorDown"
+  },
+  {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorLeft"
+  },
+  {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorRight"
+  },
+  {
+    "key": "ctrl+k ctrl+\\",
+    "command": "-workbench.action.splitEditorUp"
+  },
+  {
+    "key": "ctrl+k ctrl+k",
+    "command": "-editor.action.defineKeybinding",
+    "when": "resource == 'vscode-userdata:/home/gladevise/.config/Code/User/keybindings.json'"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-workbench.action.terminal.focusHover",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalIsOpen || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
     "key": "ctrl+k ctrl+-",
     "command": "-editor.foldAllExcept",
     "when": "editorTextFocus && foldingEnabled"

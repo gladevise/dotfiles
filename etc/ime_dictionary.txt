@@ -5,6 +5,7 @@ bcぉおck	BCloock	名詞
 ぶくろっく	BCloock	名詞	
 bろwせrsyんc	BrowserSync	名詞	
 ちゃkらうい	Chakra UI	名詞	
+ちゃtgpt	ChatGPT	名詞	
 cら	CRA	名詞	
 cれあてーれあct-あっp	create-react-app	名詞	
 cっs	CSS	名詞	
@@ -22,6 +23,8 @@ fぇxぼx	Flexbox	名詞
 gぁでゔぃせ	gladevise	名詞	
 ごおgぇ	Google	名詞	
 ごおgぇspれあdしぇえt	Goole Spread Sheet	名詞	
+gpt3	GPT-3.5	名詞	
+gpt4	GPT-4	名詞	
 gらphql	GraphQL	名詞	
 html	HTML	名詞	
 ふb	Hub	名詞	
@@ -46,6 +49,7 @@ jsこんふぃg	jsconfig.json	名詞
 のちおn	Notion	名詞	
 ない	NovelAI	名詞	
 のゔぇぁい	NovelAI	名詞	
+おぺない	OpenAI	名詞	
 ぱcかげ	package.json	名詞	
 pれっちえr	Prettier	名詞	
 ぷっぺてえr	Puppeteer	名詞	

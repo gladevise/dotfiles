@@ -56,5 +56,6 @@ tomoki1207.pdf
 twxs.cmake
 vscodevim.vim
 XadillaX.viml
+yoavbls.pretty-ts-errors
 yzhang.markdown-all-in-one
 zhuangtongfa.material-theme

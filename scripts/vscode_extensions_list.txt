@@ -13,7 +13,8 @@ foam.foam-vscode
 formulahendry.auto-rename-tag
 formulahendry.code-runner
 geddski.macros
-GitHub.copilot
+GitHub.copilot-nightly
+github.vscode-github-actions
 GitHub.vscode-pull-request-github
 GraphQL.vscode-graphql
 GraphQL.vscode-graphql-syntax

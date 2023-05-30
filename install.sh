@@ -29,5 +29,7 @@ echo $PWD
 # link dotfiles
 ./scripts/link.sh
 
+# settings for desktop
+./scripts/gsettings.sh
 
 popd

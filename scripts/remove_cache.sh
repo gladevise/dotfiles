@@ -26,6 +26,12 @@ if [[ $(command -v pip3) ]]; then
   pip3 cache purge
 fi
 
+if [[ $(command -v pdm) ]]; then
+  # https://pdm.fming.dev/latest/reference/cli/#cache
+  echo 'Removing pdm cache...'
+  pdm cache clear
+fi
+
 if [[ $(command -v npm) ]]; then
   # https://docs.npmjs.com/cli/v9/commands/npm-cache?v=true
   echo 'Removing npm cache...'

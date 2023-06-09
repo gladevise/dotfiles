@@ -51,6 +51,8 @@
   },
   // ! deprecated "editor.renameOnType": true, //対応するタグを自動的にrenameする(HTMLのみ対応)
   "editor.linkedEditing": true,
+  "javascript.preferences.renameMatchingJsxTags": true,
+  "typescript.preferences.renameMatchingJsxTags": true,
   // for further details https://code.visualstudio.com/updates/v1_44#_synced-regions
   // この辺のIssueが解決されたらJSXに実装される可能性はある
   // https://github.com/microsoft/vscode/issues/94316
@@ -152,6 +154,9 @@
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
   "git.enableSmartCommit": true,
+  // For prevent Problems loading reference 'vscode://schemas/settings/configurationDefaults': Unable to load schema from 'vscode://schemas/settings/configurationDefaults': cannot open vscode://schemas/settings/configurationDefaults. Detail: Unable to resolve text model content for resource
+  // https://github.com/microsoft/tsdoc/issues/253#issuecomment-1555873528
+  "json.schemaDownload.enable": true,
   // -----------------------------------
   // * Extension Settings
   // -----------------------------------
@@ -342,7 +347,7 @@
   // spellright settings
   // "spellright.language": ["English_American"],
   // "spellright.documentTypes": ["markdown", "latex", "plaintext"],
-  // launguage settings
+  // language settings
 
   // git-graph settings
   "git-graph.keyboardShortcut.scrollToHead": "UNASSIGNED",

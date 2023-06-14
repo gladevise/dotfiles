@@ -48,7 +48,6 @@ packages=(
 
   # system monitor
   sysstat
-  iftop
   neofetch
 
   # CLI tools
@@ -73,6 +72,11 @@ packages=(
   clamav-daemon
   libclamunrar9
   gufw
+
+  # Network tools
+  iftop
+  iperf
+  speedtest-cli
 
   # SSH
   openssh-client

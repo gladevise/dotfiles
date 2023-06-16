@@ -2,6 +2,16 @@
 [
   // Remove Default Ctrl + k bindings
   {
+    "key": "ctrl+k shift+o",
+    "command": "-workbench.action.compareEditor.openSide",
+    "when": "inDiffEditor"
+  },
+  {
+    "key": "ctrl+k i",
+    "command": "-interactiveEditor.start",
+    "when": "interactiveEditorHasProvider && !editorReadonly"
+  },
+  {
     "key": "ctrl+k ctrl+\\",
     "command": "-workbench.action.splitEditorDown"
   },

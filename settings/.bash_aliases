@@ -75,6 +75,7 @@ alias ni='pnpm install'
 alias nu='pnpm up --latest'
 alias nui='pnpm remove'
 alias nr='pnpm run'
+alias ne='pnpm exec'
 alias nx='pnpm dlx'
 
 # pdm aliases

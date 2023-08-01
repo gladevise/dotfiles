@@ -20,6 +20,11 @@ else
   sudo add-apt-repository -y ppa:git-core/ppa
 fi
 
+## install copyq
+sudo add-apt-repository ppa:hluk/copyq
+sudo apt update
+sudo apt install copyq
+
 declare -a packages
 
 packages=(

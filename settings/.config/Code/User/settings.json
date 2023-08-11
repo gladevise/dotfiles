@@ -331,6 +331,9 @@
       "workbench.action.closePanel"
     ]
   },
+  // Deno settings
+  // "deno.path": "${userHome}/.deno/bin/deno",
+  "deno.path": "/usr/local/bin/deno",
   // clip ring settings
   "clipring.maxRingItems": 10,
   "clipring.backupClipboard": true,

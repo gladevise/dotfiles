@@ -2,6 +2,36 @@
 [
   // Remove Default Ctrl + k bindings
   {
+    "key": "ctrl+k ctrl+r",
+    "command": "-git.revertSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+s",
+    "command": "-git.stageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "ctrl+k ctrl+n",
+    "command": "-git.unstageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+\\",
+    "command": "-notebook.cell.split",
+    "when": "editorTextFocus && notebookCellEditable && notebookEditable && notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+k y",
+    "command": "-notebook.cell.toggleOutputScrolling",
+    "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+f12",
+    "command": "-editor.action.revealDefinitionAside",
+    "when": "editorHasDefinitionProvider && editorTextFocus && isWeb && !isInEmbeddedEditor"
+  },
+  {
     "key": "ctrl+k shift+o",
     "command": "-workbench.action.compareEditor.openSide",
     "when": "inDiffEditor"
@@ -1532,5 +1562,15 @@
     "key": "ctrl+shift+.",
     "command": "-breadcrumbs.toggleToOn",
     "when": "!config.breadcrumbs.enabled"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "inlineChat.start",
+    "when": "inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k i",
+    "command": "-inlineChat.start",
+    "when": "inlineChatHasProvider && !editorReadonly"
   }
 ]

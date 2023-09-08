@@ -107,6 +107,8 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.formatOnSave": true
   },
+  // sticky scroll
+  "editor.stickyScroll.enabled": true,
   // highlight
   "editor.semanticHighlighting.enabled": "configuredByTheme",
   // Alt Keyをバインドするため、デフォルトの動作を無効化する

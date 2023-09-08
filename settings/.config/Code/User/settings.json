@@ -126,6 +126,7 @@
   "typescript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   // Emmet Settings
   "emmet.triggerExpansionOnTab": false, // Tab keyでEmmetを展開する
   "emmet.showSuggestionsAsSnippets": false, // EmmetをSuggestion Listに表示させるかどうか

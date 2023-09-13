@@ -107,6 +107,12 @@
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.formatOnSave": true
   },
+  "markdown.editor.filePaste.enabled": true,
+  "markdown.editor.drop.enabled": true,
+  "markdown.editor.drop.copyIntoWorkspace": "mediaFiles",
+  "markdown.copyFiles.destination": { "**/*": "${documentDirName}/media/" },
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
   // sticky scroll
   "editor.stickyScroll.enabled": true,
   // highlight

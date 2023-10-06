@@ -66,6 +66,7 @@
   // quick openからフォルダを開くときは新しいwindowにする
   "window.openFoldersInNewWindow": "on",
   // "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
   // suggestion settings
   "editor.tabCompletion": "on", // snippetでtab stopが使えるようになる
   "editor.wordBasedSuggestions": true,

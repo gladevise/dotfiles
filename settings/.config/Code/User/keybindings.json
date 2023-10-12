@@ -2,6 +2,24 @@
 [
   // Remove Default Ctrl + k bindings
   {
+    "key": "ctrl+k ctrl+shift+n",
+    "command": "-notifications.showList"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+up",
+    "command": "-editor.action.previousCommentingRange",
+    "when": "accessibilityModeEnabled && commentFocused || accessibilityModeEnabled && editorFocus || accessibilityHelpIsShown && accessibilityModeEnabled && accessibleViewCurrentProviderId == 'comments'"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+down",
+    "command": "-editor.action.nextCommentingRange",
+    "when": "accessibilityModeEnabled && commentFocused || accessibilityModeEnabled && editorFocus || accessibilityHelpIsShown && accessibilityModeEnabled && accessibleViewCurrentProviderId == 'comments'"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+c",
+    "command": "-workbench.action.addComment"
+  },
+  {
     "key": "ctrl+k ctrl+r",
     "command": "-git.revertSelectedRanges",
     "when": "isInDiffEditor && !operationInProgress"

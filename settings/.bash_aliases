@@ -78,6 +78,15 @@ alias nr='pnpm run'
 alias ne='pnpm exec'
 alias nx='pnpm dlx'
 
+# Docker command aliases
+alias dcru='docker container run'
+alias dcex='docker container exec'
+alias dcls='docker container ls'
+alias dcrm='docker container rm'
+alias dpup='docker compose up'
+alias dpdw='docker compose down'
+alias dpex='docker compose exec'
+
 # pdm aliases
 alias pr='pdm run'
 

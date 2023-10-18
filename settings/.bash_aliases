@@ -71,12 +71,12 @@ alias cppmon='nodemon -w "../" -x "make -j8" -e "hpp,cpp"'
 alias cpptest='nodemon -w "../" -x "make -j8 && make test" -e "hpp,cpp" -q --spawn'
 
 # Node command aliases
-alias ni='pnpm install'
-alias nu='pnpm up --latest'
-alias nui='pnpm remove'
-alias nr='pnpm run'
-alias ne='pnpm exec'
-alias nx='pnpm dlx'
+alias mi='pnpm install'
+alias mup='pnpm up --latest'
+alias mrm='pnpm remove'
+alias mru='pnpm run'
+alias mex='pnpm exec'
+alias mx='pnpm dlx'
 
 # Docker command aliases
 alias dcru='docker container run'

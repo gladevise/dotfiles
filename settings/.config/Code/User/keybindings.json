@@ -1555,11 +1555,7 @@
   },
   {
     "key": "ctrl+shift+a",
-    "command": "workbench.panel.chatSidebar.copilot"
-  },
-  {
-    "key": "ctrl+alt+i",
-    "command": "-workbench.panel.chatSidebar.copilot"
+    "command": "workbench.action.openChat.copilot"
   },
   {
     "key": "ctrl+shift+b",
@@ -1582,7 +1578,7 @@
     "when": "!config.breadcrumbs.enabled"
   },
   {
-    "key": "ctrl+alt+i",
+    "key": "ctrl+alt+a",
     "command": "inlineChat.start",
     "when": "inlineChatHasProvider && !editorReadonly"
   },

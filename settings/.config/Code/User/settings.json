@@ -61,8 +61,11 @@
   // https://github.com/microsoft/vscode/issues/85707
   "editor.autoClosingQuotes": "always", // auto close tag literal(``)
   // QuickOpenから開くときのみpreviewモードを使わない
-  "workbench.editor.enablePreview": true,
+  "workbench.editor.enっblePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  // ファイル名の横に親フォルダの名前を表示する
+  // Next.js App Routerで複数のpage.tsxを識別するのに便利
+  "workbench.editor.labelFormat": "short",
   // quick openからフォルダを開くときは新しいwindowにする
   "window.openFoldersInNewWindow": "on",
   // "workbench.editor.enablePreviewFromCodeNavigation": true,

@@ -11,5 +11,6 @@ echo $PWD
 # sudo snap install ${packages[@]}
 
 sudo snap install blender --classic
+sudo snap install vlc
 
 popd

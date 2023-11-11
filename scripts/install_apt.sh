@@ -68,7 +68,6 @@ packages=(
   meld
   gimp
   inkscape
-  vlc
   flameshot
   obs-studio
 

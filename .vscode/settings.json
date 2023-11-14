@@ -1,3 +1,27 @@
 {
-  "cSpell.words": ["dotfiles", "tailwindcss"]
+  "cSpell.words": [
+    ".ipynb",
+    "alacritty",
+    "clipring",
+    "dotfiles",
+    "easymotion",
+    "esbenp.prettier-vscode",
+    "Fira",
+    "git.autofetch",
+    "hlsearch",
+    "liveServer.settings.donotShowInfoMsg",
+    "ms-vscode.cpptools",
+    "neovim",
+    "nvim",
+    "scminput",
+    "tabe",
+    "tailwindcss",
+    "terminal.integrated.scrollback",
+    "vim.easymotion",
+    "vim.highlightedyank",
+    "vim.incsearch",
+    "vim.visualstar",
+    "vscodevim",
+    "yzhang.markdown-all-in-one"
+  ]
 }

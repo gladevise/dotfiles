@@ -61,7 +61,7 @@
   // https://github.com/microsoft/vscode/issues/85707
   "editor.autoClosingQuotes": "always", // auto close tag literal(``)
   // QuickOpenから開くときのみpreviewモードを使わない
-  "workbench.editor.enっblePreview": true,
+  "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   // ファイル名の横に親フォルダの名前を表示する
   // Next.js App Routerで複数のpage.tsxを識別するのに便利
@@ -130,7 +130,7 @@
   "terminal.integrated.copyOnSelection": true, // Terminalで範囲選択した部分を自動的にコピーする
   "terminal.integrated.fontFamily": "'Fira Code', monospace",
   "terminal.integrated.scrollback": 10000,
-  "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose", // 終了時にteminalのプロセスを保存
+  "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose", // 終了時にterminalのプロセスを保存
   "terminal.integrated.shellIntegration.enabled": false, //コマンドの実行結果のステータスをVSCodeで表示しない(starshipを使いたいので)
   // Auto Import Settings
   "javascript.suggest.autoImports": true,
@@ -194,21 +194,6 @@
   "vim.hlsearch": true,
   "vim.highlightedyank.enable": true, // yank時にハイライトする
   "vim.highlightedyank.duration": 400, // yankハイライト時間を調整する
-  // "vim.statusBarColorControl": true,
-  // "vim.statusBarColors.normal": [
-  //   "#8FBCBB",
-  //   "#000"
-  // ],
-  // "vim.statusBarColors.insert": "#BF616A",
-  // "vim.statusBarColors.visual": "#B48EAD",
-  // "vim.statusBarColors.visualline": "#B48EAD",
-  // "vim.statusBarColors.visualblock": "#A3BE8C",
-  // "vim.statusBarColors.replace": "#D08770",
-  // "vim.statusBarColors.commandlineinprogress": "#007ACC",
-  // "vim.statusBarColors.searchinprogressmode": "#007ACC",
-  // "vim.statusBarColors.easymotionmode": "#007ACC",
-  // "vim.statusBarColors.easymotioninputmode": "#007ACC",
-  // "vim.statusBarColors.surroundinputmode": "#007ACC",
   "vim.leader": "<space>",
   "vim.handleKeys": { "<c-n>": true },
   // InsertModeのキーバインドを設定する
@@ -363,11 +348,6 @@
     "MD040": false // コードブロックにlanguageを指定しないことを許可する
   },
   "markdownlint.run": "onSave",
-  // spellright settings
-  // "spellright.language": ["English_American"],
-  // "spellright.documentTypes": ["markdown", "latex", "plaintext"],
-  // language settings
-
   // git-graph settings
   "git-graph.keyboardShortcut.scrollToHead": "UNASSIGNED",
   // Other settings auto inserted by gui

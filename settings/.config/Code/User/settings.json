@@ -47,8 +47,6 @@
     "*.mdx": "markdown",
     // infoをiniとして扱う
     "*.info": "ini",
-    // .env.local, .env.developなどを.envとして扱う
-    "*.env*": "env",
     "*.css": "tailwindcss"
   },
   // ! deprecated "editor.renameOnType": true, //対応するタグを自動的にrenameする(HTMLのみ対応)

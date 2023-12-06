@@ -27,7 +27,7 @@ if [[ $(command -v bat) ]]; then
 fi
 
 if [[ $(command -v fd) ]]; then
-  alias fdh='fd --hidden --no-ignore'
+  alias fdh='fd -uL'
 fi
 
 if [[ $(command -v rg) ]]; then

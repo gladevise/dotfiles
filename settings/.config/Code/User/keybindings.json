@@ -605,6 +605,17 @@
     "key": "ctrl+shift+t",
     "command": "-workbench.action.reopenClosedEditor"
   },
+  // toggle Pin & UnPin
+  {
+    "key": "ctrl+w p",
+    "command": "workbench.action.pinEditor",
+    "when": "activeEditorIsPinned != true"
+  },
+  {
+    "key": "ctrl+w p",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned == true"
+  },
   // toggle ZenMode
   {
     "key": "ctrl+space z",

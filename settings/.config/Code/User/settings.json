@@ -129,7 +129,8 @@
   "terminal.integrated.fontFamily": "'Fira Code', monospace",
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose", // 終了時にterminalのプロセスを保存
-  "terminal.integrated.shellIntegration.enabled": false, //コマンドの実行結果のステータスをVSCodeで表示しない(starshipを使いたいので)
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.stickyScroll.enabled": true,
   // Auto Import Settings
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,

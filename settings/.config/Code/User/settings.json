@@ -21,8 +21,8 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   // apply formatter
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.sortImports": true
+    "source.fixAll": "explicit",
+    "source.sortImports": "explicit"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -70,7 +70,7 @@
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   // suggestion settings
   "editor.tabCompletion": "on", // snippetでtab stopが使えるようになる
-  "editor.wordBasedSuggestions": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.suggest.showKeywords": true,
   "editor.quickSuggestions": {
     "other": true,

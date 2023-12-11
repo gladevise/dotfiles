@@ -68,6 +68,7 @@
   "window.openFoldersInNewWindow": "on",
   // "workbench.editor.enablePreviewFromCodeNavigation": true,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.tree.enableStickyScroll": true,
   // suggestion settings
   "editor.tabCompletion": "on", // snippetでtab stopが使えるようになる
   "editor.wordBasedSuggestions": "matchingDocuments",

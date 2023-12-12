@@ -609,12 +609,12 @@
   {
     "key": "ctrl+w p",
     "command": "workbench.action.pinEditor",
-    "when": "activeEditorIsPinned != true"
+    "when": "!activeEditorIsPinned"
   },
   {
     "key": "ctrl+w p",
     "command": "workbench.action.unpinEditor",
-    "when": "activeEditorIsPinned == true"
+    "when": "activeEditorIsPinned"
   },
   // toggle ZenMode
   {

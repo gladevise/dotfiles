@@ -11,7 +11,7 @@
   "editor.insertSpaces": true, // tabを押すとスペースが挿入される
   "editor.wordWrap": "on", // 文字を折り返す
   "editor.formatOnSave": true,
-  "editor.formatOnPaste": false,
+  "editor.formatOnPaste": true,
   // zoom settings
   "editor.mouseWheelZoom": true,
   "window.zoomLevel": 1,
@@ -109,7 +109,8 @@
     "cSpell.advanced.feature.useReferenceProviderWithRename": true,
     "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/",
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
   },
   "markdown.editor.filePaste.enabled": true,
   "markdown.editor.drop.enabled": true,

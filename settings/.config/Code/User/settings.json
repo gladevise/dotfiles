@@ -116,8 +116,8 @@
   "markdown.editor.drop.enabled": true,
   "markdown.editor.drop.copyIntoWorkspace": "mediaFiles",
   "markdown.copyFiles.destination": { "**/*": "${documentDirName}/media/" },
-  "markdown.preview.scrollEditorWithPreview": false,
-  "markdown.preview.scrollPreviewWithEditor": false,
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
   "markdown-preview-enhanced.scrollSync": true,
   // sticky scroll
   "editor.stickyScroll.enabled": true,

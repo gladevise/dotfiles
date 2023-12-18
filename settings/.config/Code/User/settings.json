@@ -11,6 +11,7 @@
   "editor.insertSpaces": true, // tabを押すとスペースが挿入される
   "editor.wordWrap": "on", // 文字を折り返す
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
   // zoom settings
   "editor.mouseWheelZoom": true,
   "window.zoomLevel": 1,

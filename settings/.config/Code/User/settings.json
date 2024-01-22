@@ -380,6 +380,7 @@
   },
   "redhat.telemetry.enabled": false,
   "liveServer.settings.donotShowInfoMsg": true,
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "git.openRepositoryInParentFolders": "never"
   // "workbench.startupEditor": "none"
 }

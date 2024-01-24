@@ -51,6 +51,7 @@ jsこんふぃg	jsconfig.json	名詞
 のゔぇぁい	NovelAI	名詞	
 おぺない	OpenAI	名詞	
 ぱcかげ	package.json	名詞	
+ぽstgれsql	PostgreSQL	名詞	
 pれっちえr	Prettier	名詞	
 ぷっぺてえr	Puppeteer	名詞	
 pyてょn	Python	名詞	

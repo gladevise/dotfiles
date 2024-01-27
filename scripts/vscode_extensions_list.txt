@@ -42,6 +42,7 @@ ms-vscode.live-server
 ms-vscode.remote-explorer
 mushan.vscode-paste-image
 nico-castell.linux-desktop-file
+oven.bun-vscode
 PKief.material-icon-theme
 pnp.polacode
 Prisma.prisma
@@ -49,15 +50,17 @@ redhat.vscode-xml
 redhat.vscode-yaml
 ritwickdey.LiveServer
 ryu1kn.partial-diff
+shd101wyy.markdown-preview-enhanced
 SirTobi.code-clip-ring
 steoates.autoimport
 streetsidesoftware.code-spell-checker
+stripe.vscode-stripe
 tamasfe.even-better-toml
 toba.vsfire
 tomoki1207.pdf
 twxs.cmake
 vscodevim.vim
 XadillaX.viml
-yoavbls.pretty-ts-errors
+YoavBls.pretty-ts-errors
 yzhang.markdown-all-in-one
 zhuangtongfa.material-theme

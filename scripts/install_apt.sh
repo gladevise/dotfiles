@@ -6,24 +6,13 @@ echo $PWD
 
 # ppaを追加する
 
-## Add obs ppa
-if [ -f "/etc/apt/sources.list.d/obsproject-ubuntu-obs-studio-focal.list" ]; then
-  echo "obs ppa is already existed"
-else
-  sudo add-apt-repository -y ppa:obsproject/obs-studio
-fi
+## Add ppas
+sudo add-apt-repository -y ppa:obsproject/obs-studio
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo add-apt-repository -y ppa:hluk/copyq
 
-## Add git ppa
-if [ -f "/etc/apt/sources.list.d/git-core-ubuntu-ppa-focal.list" ]; then
-  echo "git ppa is already existed"
-else
-  sudo add-apt-repository -y ppa:git-core/ppa
-fi
-
-## install copyq
-sudo add-apt-repository ppa:hluk/copyq
 sudo apt update
-sudo apt install copyq
+sudo apt install -y copyq git obs-studio
 
 declare -a packages
 

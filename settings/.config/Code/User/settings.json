@@ -15,6 +15,7 @@
   // zoom settings
   "editor.mouseWheelZoom": true,
   "window.zoomLevel": 1,
+  "window.zoomPerWindow": true,
   // bracket pair settings
   "editor.guides.bracketPairs": true,
   "editor.bracketPairColorization.enabled": true,
@@ -134,6 +135,7 @@
   "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose", // 終了時にterminalのプロセスを保存
   "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.stickyScroll.enabled": true,
+  "terminal.integrated.mouseWheelZoom": true,
   // Auto Import Settings
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
@@ -381,6 +383,7 @@
   "redhat.telemetry.enabled": false,
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.inlineSuggest.enabled": true,
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.fontSize": 16
   // "workbench.startupEditor": "none"
 }

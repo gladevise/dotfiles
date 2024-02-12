@@ -2,6 +2,46 @@
 [
   // Remove Default Ctrl + k bindings
   {
+    "key": "ctrl+k o",
+    "command": "-workbench.action.copyEditorToNewWindow",
+    "when": "activeEditor"
+  },
+  {
+    "key": "ctrl+k ctrl+m",
+    "command": "-workbench.action.toggleMaximizeEditorGroup",
+    "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-workbench.action.showTreeHover",
+    "when": "customTreeView && listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "ctrl+k i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k i",
+    "command": "-inlineChat.quickVoice.start",
+    "when": "editorFocus && hasSpeechProvider && !inlineChat.quickChatInProgress"
+  },
+  {
+    "key": "ctrl+k i",
+    "command": "-inlineChat.quickVoice.stop",
+    "when": "hasSpeechProvider && inlineChat.quickChatInProgress"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "-markdown-preview-enhanced.openPreviewToTheSide",
+    "when": "editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+k v",
+    "command": "-markdown.extension.closePreview",
+    "when": "activeWebviewPanelId == 'markdown.preview'"
+  },
+  {
     "key": "ctrl+k ctrl+shift+n",
     "command": "-notifications.showList"
   },

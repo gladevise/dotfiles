@@ -202,9 +202,8 @@
   "vim.leader": "<space>",
   "vim.handleKeys": { "<c-n>": true },
   // InsertModeのキーバインドを設定する
-  // "vim.insertModeKeyBindings": [{ "before": ["j", "j"], "after": ["<C-[>"] }],
   "vim.insertModeKeyBindingsNonRecursive": [
-    { "before": ["j", "j"], "after": ["<C-[>"] }
+    { "before": ["<C-x>"], "after": ["<C-[>"] }
   ],
   // NormalModeのキーバインドを設定する
   "vim.normalModeKeyBindings": [

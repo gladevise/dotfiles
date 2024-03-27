@@ -111,7 +111,9 @@
     "cSpell.advanced.feature.useReferenceProviderRemove": "/^#+\\s/",
     "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
   },
   "markdown.editor.filePaste.enabled": true,
   "markdown.editor.drop.enabled": true,

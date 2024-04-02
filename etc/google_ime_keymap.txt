@@ -24,6 +24,10 @@ Conversion	Ctrl h	Cancel
 Composition	Ctrl h	Backspace
 Composition	Ctrl i	ConvertToFullKatakana
 Conversion	Ctrl i	ConvertToFullKatakana
+DirectInput	Ctrl i	IMEOff
+Precomposition	Ctrl i	IMEOff
+Composition	Ctrl i	IMEOff
+Conversion	Ctrl i	IMEOff
 Composition	Ctrl j	PredictAndConvert
 Conversion	Ctrl j	ConvertNext
 Composition	Ctrl k	MoveCursorLeft

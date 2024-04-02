@@ -1675,7 +1675,7 @@
 
   // Select all matches (ctrl + a). This is effectively the same as (ctrl + shift + l)
   {
-    "key": "ctrl+a",
+    "key": "alt+a",
     "command": "editor.action.selectHighlights",
     "when": "vim.active && editorFocus && vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualBlock' && !inDebugRepl"
   },

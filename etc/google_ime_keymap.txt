@@ -22,8 +22,6 @@ Conversion	Ctrl g	Cancel
 Composition	Ctrl g	Delete
 Conversion	Ctrl h	Cancel
 Composition	Ctrl h	Backspace
-Composition	Ctrl i	ConvertToFullKatakana
-Conversion	Ctrl i	ConvertToFullKatakana
 DirectInput	Ctrl i	IMEOff
 Precomposition	Ctrl i	IMEOff
 Composition	Ctrl i	IMEOff
@@ -37,8 +35,8 @@ Composition	Ctrl l	MoveCursorRight
 Conversion	Ctrl l	SegmentWidthExpand
 Composition	Ctrl Left	MoveCursorToBeginning
 Conversion	Ctrl Left	SegmentFocusFirst
-Composition	Ctrl m	Commit
-Conversion	Ctrl m	Commit
+Composition	Ctrl m	ConvertToFullKatakana
+Conversion	Ctrl m	ConvertToFullKatakana
 Composition	Ctrl n	MoveCursorToEnd
 Conversion	Ctrl n	CommitOnlyFirstSegment
 Composition	Ctrl o	ConvertToHalfWidth

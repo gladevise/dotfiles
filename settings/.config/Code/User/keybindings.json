@@ -1659,9 +1659,9 @@
     "when": "vim.active && editorFocus && vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualBlock' && !inDebugRepl"
   },
 
-  // Skip current match (ctrl + x)
+  // Skip current match (ctrl + m)
   {
-    "key": "ctrl+x",
+    "key": "ctrl+m",
     "command": "editor.action.moveSelectionToNextFindMatch",
     "when": "vim.active && editorFocus && vim.mode == 'Normal' || vim.mode == 'Visual' || vim.mode == 'VisualBlock' && !inDebugRepl"
   },

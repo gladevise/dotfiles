@@ -1684,5 +1684,10 @@
     "key": "ctrl+i",
     "command": "removeSecondaryCursors",
     "when": "editorHasMultipleSelections && textInputFocus && vim.active"
+  },
+  {
+    "key": "enter",
+    "command": "-acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   }
 ]

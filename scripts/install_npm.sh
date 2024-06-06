@@ -8,14 +8,8 @@ echo $PWD
 declare -a packages
 
 packages=(
-  # Linter
-  eslint
-
   # CLI Tools
-  serve
-  nodemon
   lighthouse
-  @jarred/git-peek
 
   # Package updater
   npm-check-updates

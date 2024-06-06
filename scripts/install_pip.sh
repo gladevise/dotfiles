@@ -8,15 +8,6 @@ echo $PWD
 declare -a packages
 
 packages=(
-
-  # Linter
-  flake8
-  pylint
-
-  # Formatter
-  black
-  jedi
-
   # build tools
   wheel
 
@@ -25,7 +16,6 @@ packages=(
 
   # CLI tools
   yt-dlp
-  pdm
   tmuxp
   powerline-status
 )

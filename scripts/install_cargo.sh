@@ -7,7 +7,7 @@ declare -a packages
 
 packages=(
   # CLI Tools
-  exa
+  eza
   ripgrep
   bat
   fd-find

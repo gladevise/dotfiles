@@ -23,6 +23,9 @@ echo $PWD
 # install AppImage
 ./scripts/install_appimages.sh
 
+# install flatpak
+./scripts/install_flatpak.sh
+
 # create nvim_env
 ./scripts/install_nvim.sh
 

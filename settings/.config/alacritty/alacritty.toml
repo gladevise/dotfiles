@@ -26,7 +26,7 @@ foreground = "#abb2bf"
 TERM = "alacritty"
 
 [font]
-size = 13
+size = 11
 
 [shell]
 args = ["--login", "-c", "tmux attach || tmux"]

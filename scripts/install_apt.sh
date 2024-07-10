@@ -6,14 +6,6 @@ echo $PWD
 
 # ppaを追加する
 
-## Add ppas
-sudo add-apt-repository -y ppa:obsproject/obs-studio
-sudo add-apt-repository -y ppa:git-core/ppa
-sudo add-apt-repository -y ppa:hluk/copyq
-
-sudo apt update
-sudo apt install -y copyq git obs-studio
-
 declare -a packages
 
 packages=(
@@ -58,7 +50,6 @@ packages=(
   gimp
   inkscape
   flameshot
-  obs-studio
 
   # Security
   clamav

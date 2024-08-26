@@ -90,6 +90,9 @@ alias dpex='docker compose exec'
 # pdm aliases
 alias pr='pdm run'
 
+# wezterm
+alias wezterm='flatpak run org.wezfurlong.wezterm'
+
 # create directory and file at once
 mkt(){
   mkdir -p "$(dirname "$1")" && touch "$1" ;

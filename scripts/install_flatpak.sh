@@ -10,4 +10,6 @@ echo $PWD
 sudo apt install -y flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+./install_flathub_apps.sh
+
 popd

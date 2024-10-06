@@ -54,7 +54,7 @@ packages=(
   # Security
   clamav
   clamav-daemon
-  libclamunrar9
+  libclamunrar
   gufw
 
   # Network tools

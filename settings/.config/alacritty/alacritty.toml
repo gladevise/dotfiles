@@ -28,6 +28,6 @@ TERM = "alacritty"
 [font]
 size = 11
 
-[shell]
+[terminal.shell]
 args = ["--login", "-c", "tmux attach || tmux"]
 program = "/bin/bash"

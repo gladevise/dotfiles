@@ -1,0 +1,4 @@
+# yazi.toml
+[manager]
+sort_by = "modified"
+linemode = "size_and_mtime"

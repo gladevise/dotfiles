@@ -6,8 +6,8 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
--- For example, changing the color scheme:
 config.use_ime = true
+config.color_scheme = 'One Dark (Gogh)'
 
 -- and finally, return the configuration to wezterm
 return config

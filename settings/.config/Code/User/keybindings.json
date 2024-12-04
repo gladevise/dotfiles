@@ -1605,10 +1605,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+a",
-    "command": "workbench.action.openChat.copilot"
-  },
-  {
     "key": "ctrl+shift+b",
     "command": "breadcrumbs.focusAndSelect",
     "when": "breadcrumbsPossible && breadcrumbsVisible"
@@ -1716,11 +1712,6 @@
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
   {
-    "key": "ctrl+shift+a",
-    "command": "composer.startComposerControlPanel",
-    "when": "composerIsEnabled"
-  },
-  {
     "key": "ctrl+shift+i",
     "command": "-composer.startComposerControlPanel",
     "when": "composerIsEnabled"
@@ -1744,5 +1735,20 @@
     "key": "ctrl+i",
     "command": "-workbench.action.chat.startVoiceChat",
     "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress && !terminalChatActiveRequest || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress && !terminalChatActiveRequest"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "workbench.action.chat.open",
+    "when": "chatPanelParticipantRegistered"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-workbench.action.chat.open",
+    "when": "chatPanelParticipantRegistered"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-notification.acceptPrimaryAction",
+    "when": "notificationFocus || notificationToastsVisible"
   }
 ]

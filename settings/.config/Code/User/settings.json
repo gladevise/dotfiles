@@ -386,6 +386,7 @@
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.inlineSuggest.enabled": true,
   "git.openRepositoryInParentFolders": "never",
-  "terminal.integrated.fontSize": 16
+  "terminal.integrated.fontSize": 16,
+  "chat.editing.alwaysSaveWithGeneratedChanges": true
   // "workbench.startupEditor": "none"
 }

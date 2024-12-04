@@ -72,6 +72,14 @@ config.keys = {
     mods = 'CTRL|SHIFT',
     action = wezterm.action.ActivateCommandPalette,
   },
+
+  -- Pane keybindings
+  -- This will create a new split and run your default program inside it
+  {
+    mods = 'LEADER',
+    key = 'e',
+    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+  },
 }
 
 -- and finally, return the configuration to wezterm

@@ -15,6 +15,6 @@ flatpak install -y flathub com.github.hluk.copyq
 
 # Install wezterm
 # https://flathub.org/apps/org.wezfurlong.wezterm
-flatpak install flathub org.wezfurlong.wezterm
+flatpak install -y flathub org.wezfurlong.wezterm
 
 popd

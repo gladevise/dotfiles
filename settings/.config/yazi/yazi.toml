@@ -1,5 +1,5 @@
 # yazi.toml
 [manager]
-sort_by = "modified"
+sort_by = "mtime"
 sort_reverse = true
 linemode = "size_and_mtime"

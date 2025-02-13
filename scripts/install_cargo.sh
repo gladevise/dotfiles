@@ -13,7 +13,6 @@ packages=(
   fd-find
   bottom
   tealdeer
-  starship
 
   # package updater
   cargo-update

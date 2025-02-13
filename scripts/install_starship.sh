@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cargo install starship --locked
+
 EVAL_STARSHIP='eval "$(starship init bash)"'
 
 grep "$EVAL_STARSHIP" ~/.bashrc

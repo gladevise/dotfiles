@@ -12,6 +12,7 @@ geddski.macros
 github.vscode-github-actions
 github.vscode-pull-request-github
 hediet.debug-visualizer
+mechatroner.rainbow-csv
 mhutchie.git-graph
 mikestead.dotenv
 mosapride.zenkaku
@@ -20,6 +21,7 @@ ms-dotnettools.vscode-dotnet-runtime
 ms-python.black-formatter
 ms-python.debugpy
 ms-python.python
+ms-python.vscode-pylance
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit

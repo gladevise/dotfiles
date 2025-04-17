@@ -13,4 +13,6 @@ sudo snap refresh
 
 ./upgrade_npm.sh
 
+./upgrade_vscode_extensions.sh
+
 popd

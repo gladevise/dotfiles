@@ -5,6 +5,8 @@ cd `dirname $0`
 
 sudo snap refresh
 
+./upgrade_flatpak.sh
+
 ./upgrade_pip.sh
 
 ./upgrade_cargo.sh

@@ -1,0 +1,11 @@
+{
+	"formatter": {
+		"indentStyle": "space", // デフォルトは `tab`
+		"lineWidth": 100 // デフォルトは `80`
+	},
+	"json": {
+		"formatter": {
+			"enabled": true
+		}
+	}
+}

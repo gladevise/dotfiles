@@ -27,14 +27,14 @@
     "source.sortImports": "explicit"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
-  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[typescriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[javascriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[json]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[jsonc]": { "editor.defaultFormatter": "biomejs.biome" },
   "prettier.singleQuote": true,
   "[python]": {
     "editor.formatOnType": true
@@ -95,7 +95,6 @@
     // "editor.wordBasedSuggestions": false,
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true,
-    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[markdown]": {
     "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -115,8 +114,11 @@
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000
   },
-  "markdown.editor.filePaste.enabled": true,
-  "markdown.editor.drop.enabled": true,
+  "markdown.editor.filePaste.enabled": "always", // markdownファイルに画像を貼り付けるときに、画像を自動的に保存する
+  "markdown.editor.filePaste.copyIntoWorkspace": "mediaFiles", // markdownファイルに画像を貼り付けるときに、画像を自動的に保存するフォルダ
+  "markdown.editor.drop.enabled": "always", // markdownファイルに画像をドラッグ＆ドロップするときに、画像を自動的に保存する
+  "markdown.editor.drop.copyIntoWorkspace.enabled": true, // markdownファイルに画像をドラッグ＆ドロップするときに、画像を自動的に保存する
+  "markdown.editor.drop.copyIntoWorkspace.enabledForMarkdownFiles": true, // markdownファイルに画像をドラッグ＆ドロップするときに、画像を自動的に保存する
   "markdown.editor.drop.copyIntoWorkspace": "mediaFiles",
   "markdown.copyFiles.destination": { "**/*": "${documentDirName}/media/" },
   "markdown.preview.scrollEditorWithPreview": true,
@@ -191,8 +193,8 @@
   // vscodevim settings
   "vim.debug.loggingLevelForConsole": "debug", // Consoleに表示するvscodevimのログレベルを調整する
   "vim.startInInsertMode": false, // Normal Modeで開始する
-  "vim.enableNeovim": true, // NeoVimを有効にする
-  "vim.neovimPath": "/usr/local/bin/nvim", // NeoVim実行ファイルまでのパスを指定する
+  "vim.enableNeovim": true, // NeoVim実行ファイルまでのパスを指定する
+  "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true, // yank時にシステムのクリップボードにコピー
@@ -387,6 +389,7 @@
   "editor.inlineSuggest.enabled": true,
   "git.openRepositoryInParentFolders": "never",
   "terminal.integrated.fontSize": 16,
-  "chat.editing.alwaysSaveWithGeneratedChanges": true
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  "docker.extension.enableComposeLanguageServer": false
   // "workbench.startupEditor": "none"
 }

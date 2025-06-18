@@ -437,5 +437,7 @@
   "editor.inlineSuggest.enabled": true,
   "git.openRepositoryInParentFolders": "never",
   "terminal.integrated.fontSize": 16,
-  "docker.extension.enableComposeLanguageServer": false
+  "docker.extension.enableComposeLanguageServer": false,
+  "remote.SSH.defaultExtensions": ["geddski.macros", "mhutchie.git-graph"],
+  "dev.containers.defaultExtensions": ["geddski.macros", "mhutchie.git-graph"]
 }

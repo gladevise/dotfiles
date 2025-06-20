@@ -439,5 +439,8 @@
   "terminal.integrated.fontSize": 16,
   "docker.extension.enableComposeLanguageServer": false,
   "remote.SSH.defaultExtensions": ["geddski.macros", "mhutchie.git-graph"],
-  "dev.containers.defaultExtensions": ["geddski.macros", "mhutchie.git-graph"]
+  "dev.containers.defaultExtensions": ["geddski.macros", "mhutchie.git-graph"],
+  // VSCodeでIMEがうまく動作しない問題を回避するための設定
+  // https://zenn.dev/hibikine/articles/ac0295ebffa652
+  "editor.experimentalEditContextEnabled": false
 }

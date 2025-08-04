@@ -647,5 +647,6 @@
   // VSCodeでIMEがうまく動作しない問題を回避するための設定
   // https://zenn.dev/hibikine/articles/ac0295ebffa652
   "editor.experimentalEditContextEnabled": false,
-  "editor.suggest.preview": true
+  "editor.suggest.preview": true,
+  "biome.suggestInstallingGlobally": false
 }

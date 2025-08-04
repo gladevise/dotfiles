@@ -648,5 +648,7 @@
   // https://zenn.dev/hibikine/articles/ac0295ebffa652
   "editor.experimentalEditContextEnabled": false,
   "editor.suggest.preview": true,
-  "biome.suggestInstallingGlobally": false
+  "biome.suggestInstallingGlobally": false,
+  "dev.containers.dockerPath": "podman",
+	"dev.containers.dockerComposePath": "podman-compose"
 }

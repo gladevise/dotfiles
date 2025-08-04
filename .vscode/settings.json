@@ -9,6 +9,8 @@
     "Fira",
     "git.autofetch",
     "hlsearch",
+    "lazydocker",
+    "lazypodman",
     "liveServer.settings.donotShowInfoMsg",
     "ms-vscode.cpptools",
     "neovim",

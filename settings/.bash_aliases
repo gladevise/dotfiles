@@ -101,3 +101,9 @@ mkt(){
 upg(){
   ~/dotfiles/scripts/upgrade.sh
 }
+
+# lazydocker with podman
+lazypodman(){
+  export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
+  lazydocker
+}

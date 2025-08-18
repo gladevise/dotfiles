@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
   "formatter": {
     "indentStyle": "space", // デフォルトは `tab`
     "lineWidth": 100 // デフォルトは `80`
@@ -13,7 +13,10 @@
     }
   },
   "files": {
-    "includes": ["**", "!**/settings.json"]
+    "includes": [
+      "**",
+      "!**/settings.json"
+    ]
   },
   "linter": {
     "rules": {

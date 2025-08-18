@@ -32,7 +32,7 @@ fi
 $HOME/.cargo/bin/rustup update stable
 
 # install build dependencies
-sudo apt install -y libssl-dev
+sudo apt install -y libssl-dev pkg-config
 # install cargo applications
 $HOME/.cargo/bin/cargo install -j4 ${packages[@]}
 

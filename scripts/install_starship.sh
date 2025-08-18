@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cargo install starship --locked
+$HOME/.cargo/bin/cargo install starship --locked
 
 EVAL_STARSHIP='eval "$(starship init bash)"'
 

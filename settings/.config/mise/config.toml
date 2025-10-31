@@ -1,5 +1,6 @@
 
 [tools]
+node = "lts"
 bun = "latest"
 codex = "latest"
 fzf = "latest"

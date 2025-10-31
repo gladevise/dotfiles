@@ -11,10 +11,6 @@ flatpak update -y
 
 ./install_alacritty.sh
 
-./install_node.sh
-
-./upgrade_npm.sh
-
 code --update-extensions
 
 popd

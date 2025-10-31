@@ -23,9 +23,6 @@ echo $PWD
 ./scripts/install_node.sh
 ./scripts/install_npm.sh
 
-# install AppImage
-./scripts/install_appimages.sh
-
 # install flatpak
 ./scripts/install_flatpak.sh
 

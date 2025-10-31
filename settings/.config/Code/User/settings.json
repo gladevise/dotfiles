@@ -670,4 +670,5 @@
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
 }

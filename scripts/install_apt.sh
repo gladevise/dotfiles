@@ -9,6 +9,9 @@ echo $PWD
 declare -a packages
 
 packages=(
+  # shell
+  zsh
+
   # build tools
   build-essential
   cmake
@@ -77,5 +80,8 @@ packages=(
 # update & upgrade
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y ${packages[@]}
+
+# set zsh as default shell
+sudo chsh -s $(which zsh)
 
 popd

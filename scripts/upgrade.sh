@@ -9,7 +9,7 @@ mise upgrade
 
 ./upgrade_flatpak.sh
 
-./upgrade_cargo.sh
+./install_alacritty.sh
 
 ./install_node.sh
 

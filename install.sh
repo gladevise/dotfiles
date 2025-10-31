@@ -13,9 +13,6 @@ echo $PWD
 # install snap applications
 ./scripts/install_snap.sh
 
-# install cargo applications
-./scripts/install_cargo.sh
-
 # install nvm & Node.js & JavaScript packages
 ./scripts/install_node.sh
 ./scripts/install_npm.sh
@@ -31,6 +28,12 @@ echo $PWD
 
 # install mise
 ./scripts/install_mise.sh
+
+# install alacritty
+./scripts/install_alacritty.sh
+
+# settings for bash
+./scripts/settings_bash.sh
 
 # settings for desktop
 ./scripts/gsettings.sh

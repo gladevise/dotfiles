@@ -4,13 +4,26 @@ bun = "latest"
 codex = "latest"
 fzf = "latest"
 yazi = "latest"
+
 uv = "latest"
-rust = "latest"
 "pipx:podman-compose" = "latest"
 "pipx:yt-dlp" = "latest"
 "pipx:powerline-status" = "latest"
+
+rust = "latest"
+cargo-binstall = "latest"
+"cargo:eza" = "latest"
+"cargo:ripgrep" = "latest"
+"cargo:bat" = "latest"
+"cargo:fd-find" = "latest"
+"cargo:bottom" = "latest"
+"cargo:tealdeer" = "latest"
+"cargo:starship" = "latest"
 
 [settings]
 
 [settings.pipx]
 uvx = true
+
+[settings.cargo]
+binstall = true

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 pushd $PWD
 cd `dirname $0`
 

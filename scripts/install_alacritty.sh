@@ -1,9 +1,10 @@
 #!/bin/bash
-# Install alacritty
+
 pushd $PWD
 cd `dirname $0`
 echo $PWD
 
+# Install alacritty
 source ./utils.sh
 
 # check alacritty installation

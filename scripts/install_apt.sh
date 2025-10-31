@@ -49,7 +49,6 @@ packages=(
   meld
   gimp
   inkscape
-  flameshot
 
   # Security
   clamav
@@ -70,8 +69,10 @@ packages=(
   # gnome-tweak-tool # change to gnome-tweaks since Ubuntu 22.04
   gnome-tweaks
   gnome-shell-extensions
-)
 
+  # Containers
+  podman
+)
 
 # update & upgrade
 sudo apt update && sudo apt upgrade -y

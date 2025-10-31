@@ -7,6 +7,9 @@ echo $PWD
 # Install apt packages
 ./scripts/install_apt.sh
 
+# Settings for podman
+./scripts/settings_podman.sh
+
 # install pip applications
 ./scripts/install_pip.sh
 

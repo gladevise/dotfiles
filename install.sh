@@ -10,9 +10,6 @@ echo $PWD
 # Settings for podman
 ./scripts/settings_podman.sh
 
-# install pip applications
-./scripts/install_pip.sh
-
 # install snap applications
 ./scripts/install_snap.sh
 
@@ -31,6 +28,9 @@ echo $PWD
 
 # link dotfiles
 ./scripts/link.sh
+
+# install mise
+./scripts/install_mise.sh
 
 # settings for desktop
 ./scripts/gsettings.sh

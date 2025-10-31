@@ -1,0 +1,16 @@
+
+[tools]
+bun = "latest"
+codex = "latest"
+fzf = "latest"
+yazi = "latest"
+uv = "latest"
+rust = "latest"
+"pipx:podman-compose" = "latest"
+"pipx:yt-dlp" = "latest"
+"pipx:powerline-status" = "latest"
+
+[settings]
+
+[settings.pipx]
+uvx = true

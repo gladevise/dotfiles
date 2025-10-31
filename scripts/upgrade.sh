@@ -5,9 +5,9 @@ cd `dirname $0`
 
 sudo snap refresh
 
-./upgrade_flatpak.sh
+mise upgrade
 
-./upgrade_pip.sh
+./upgrade_flatpak.sh
 
 ./upgrade_cargo.sh
 

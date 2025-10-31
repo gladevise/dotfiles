@@ -11,5 +11,11 @@ sudo apt remove pipx -y
 
 # Uninstall cargo packages
 $HOME/.cargo/bin/cargo uninstall eza ripgrep bat fd-find bottom tealdeer cargo-update starship
+cargo-cache -a
+
+# Uninstall node & npm packages
+export NVM_DIR="$HOME/.nvm"
+rm -rf $NVM_DIR
+
 
 popd

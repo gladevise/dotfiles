@@ -19,6 +19,7 @@ cargo-binstall = "latest"
 "cargo:bottom" = "latest"
 "cargo:tealdeer" = "latest"
 "cargo:starship" = "latest"
+"cargo:cargo-cache" = "latest"
 
 [settings]
 

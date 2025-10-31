@@ -5,6 +5,7 @@ bun = "latest"
 codex = "latest"
 fzf = "latest"
 yazi = "latest"
+lazydocker = "latest"
 
 uv = "latest"
 "pipx:podman-compose" = "latest"

@@ -19,5 +19,13 @@ else
   echo "$EVAL_STARSHIP" >> ~/.bashrc
 fi
 
+EVAL_FZF='eval "$(fzf --bash)"'
+grep "$EVAL_FZF" ~/.bashrc
+if [ $? == 0 ]; then
+  echo "fzf installed successfully"
+else
+  echo "add eval fzf command to ~/.bashrc"
+  echo "$EVAL_FZF" >> ~/.bashrc
+fi
 
 popd

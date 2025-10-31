@@ -13,10 +13,6 @@ echo $PWD
 # install snap applications
 ./scripts/install_snap.sh
 
-# install nvm & Node.js & JavaScript packages
-./scripts/install_node.sh
-./scripts/install_npm.sh
-
 # install flatpak
 ./scripts/install_flatpak.sh
 

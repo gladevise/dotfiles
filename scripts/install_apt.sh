@@ -82,6 +82,6 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y ${packages[@]}
 
 # set zsh as default shell
-sudo chsh -s $(which zsh)
+sudo chsh -s $(which zsh) "$USER"
 
 popd

@@ -30,4 +30,4 @@ size = 11
 
 [terminal.shell]
 args = ["--login", "-c", "tmux attach || tmux"]
-program = "/bin/bash"
+program = "/usr/bin/zsh"

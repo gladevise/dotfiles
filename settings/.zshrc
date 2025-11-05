@@ -53,3 +53,6 @@ lazypodman(){
   export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/podman/podman.sock
   lazydocker
 }
+
+# wezterm
+alias wezterm='flatpak run org.wezfurlong.wezterm'

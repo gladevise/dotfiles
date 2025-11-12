@@ -56,3 +56,5 @@ lazypodman(){
 
 # wezterm
 alias wezterm='flatpak run org.wezfurlong.wezterm'
+# unrar command aliases
+alias rarx='unrar x'

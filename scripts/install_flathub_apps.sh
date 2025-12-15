@@ -13,8 +13,4 @@ flatpak install -y flathub com.obsproject.Studio
 # https://flathub.org/apps/com.github.hluk.copyq
 flatpak install -y flathub com.github.hluk.copyq
 
-# Install wezterm
-# https://flathub.org/apps/org.wezfurlong.wezterm
-flatpak install -y flathub org.wezfurlong.wezterm
-
 popd

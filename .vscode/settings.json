@@ -7,6 +7,8 @@
     "easymotion",
     "esbenp.prettier-vscode",
     "Fira",
+    "flathub",
+    "ghostty",
     "git.autofetch",
     "hlsearch",
     "lazydocker",
@@ -24,6 +26,7 @@
     "vim.incsearch",
     "vim.visualstar",
     "vscodevim",
+    "wezterm",
     "yzhang.markdown-all-in-one"
   ]
 }

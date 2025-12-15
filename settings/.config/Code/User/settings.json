@@ -671,4 +671,7 @@
   },
   "docker.extension.dockerEngineAvailabilityPrompt": false,
   "terminal.integrated.defaultProfile.linux": "zsh",
+  "chat.mcp.gallery.enabled": true,
+  "terminal.integrated.suggest.inlineSuggestion": "off",
+  "terminal.integrated.suggest.enabled": false,
 }

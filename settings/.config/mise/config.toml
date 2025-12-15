@@ -2,6 +2,7 @@
 [tools]
 node = "lts"
 bun = "latest"
+pnpm = "latest"
 codex = "latest"
 fzf = "latest"
 yazi = "latest"

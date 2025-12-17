@@ -7,9 +7,11 @@ sudo apt update && apt list --upgradable && sudo apt upgrade -y
 
 sudo snap refresh
 
-mise upgrade
-
 flatpak update -y
+
+mise self-update -y
+
+mise upgrade -v
 
 ./install_alacritty.sh
 

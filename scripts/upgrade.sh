@@ -11,7 +11,7 @@ flatpak update -y
 
 mise self-update -y
 
-mise upgrade -v
+mise upgrade
 
 ./install_alacritty.sh
 

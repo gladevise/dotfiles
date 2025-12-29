@@ -7,11 +7,19 @@ echo $PWD
 # Install alacritty
 source ./utils.sh
 
+# resolve latest release tag once to avoid rate-limit issues
+latest_version_tag=$(get_github_latest_release_tag 'alacritty/alacritty')
+if [[ -z "$latest_version_tag" ]]; then
+  echo "Failed to fetch latest Alacritty release tag; skipping install/upgrade."
+  popd
+  exit 1
+fi
+latest_version=$(printf '%s\n' "$latest_version_tag" | sed -E 's/^v?([0-9.]+).*/\1/' | tr -d '\r')
+
 # check alacritty installation
 if [[  $(command -v alacritty)  ]]; then
   # check alacritty version
-  latest_version=$(get_github_latest_release_tag 'alacritty/alacritty' | sed -E 's/^v?([0-9\.]+)/\1/')
-  installed_version=$(alacritty --version | awk '{print $2}')
+  installed_version=$(alacritty --version | awk '{print $2}' | sed -E 's/^v?([0-9.]+).*/\1/' | tr -d '\r')
   if [[ $latest_version == $installed_version ]]; then
     echo "Latest version alacritty is installed!"
     popd
@@ -37,7 +45,6 @@ fi
 git clone https://github.com/alacritty/alacritty
 cd alacritty
 #chekcout latest version
-latest_version_tag=$(get_github_latest_release_tag 'alacritty/alacritty')
 git checkout $latest_version_tag
 
 # check rustup & cargo installation

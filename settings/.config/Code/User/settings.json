@@ -674,4 +674,6 @@
   "chat.mcp.gallery.enabled": true,
   "terminal.integrated.suggest.inlineSuggestion": "off",
   "terminal.integrated.suggest.enabled": false,
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.useTerminal": true,
 }

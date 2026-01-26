@@ -132,9 +132,9 @@
   "markdown.copyFiles.destination": {
     "**/*": "${documentDirName}/media/"
   },
-  "markdown.preview.scrollEditorWithPreview": true,
-  "markdown.preview.scrollPreviewWithEditor": true,
-  "markdown-preview-enhanced.scrollSync": true,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.preview.scrollPreviewWithEditor": false,
+  "markdown-preview-enhanced.scrollSync": false,
   // sticky scroll
   "editor.stickyScroll.enabled": true,
   // highlight

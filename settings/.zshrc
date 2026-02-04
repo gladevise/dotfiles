@@ -58,3 +58,7 @@ lazypodman(){
 alias wezterm='flatpak run org.wezfurlong.wezterm'
 # unrar command aliases
 alias rarx='unrar x'
+
+# ghostty workaround for VK_ERROR_INCOMPATIBLE_DRIVER
+# https://github.com/ghostty-org/ghostty/discussions/8863#discussioncomment-14529500
+alias ghostty='GALLIUM_DRIVER=llvmpipe ghostty'

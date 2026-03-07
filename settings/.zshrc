@@ -11,6 +11,14 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Forward TERM_PROGRAM over SSH via LC_ variable
+# Most SSH servers accept LC_* by default (AcceptEnv LANG LC_*)
+if [[ -n "$TERM_PROGRAM" ]]; then
+  export LC_TERM_PROGRAM="$TERM_PROGRAM"
+elif [[ -n "$LC_TERM_PROGRAM" ]]; then
+  export TERM_PROGRAM="$LC_TERM_PROGRAM"
+fi
+
 eval "$(~/.local/bin/mise activate zsh)"
 eval "$(starship init zsh)"
 source <(fzf --zsh)

@@ -38,6 +38,9 @@ if [[ "$TERM" == xterm-ghostty ]]; then
 fi
 
 eval "$(~/.local/bin/mise activate zsh)"
+
+export EDITOR=nvim
+export VISUAL=nvim
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 

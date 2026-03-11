@@ -1,5 +1,7 @@
 
 [tools]
+neovim = "latest"
+lazygit = "latest"
 node = "lts"
 bun = "latest"
 codex = "latest"

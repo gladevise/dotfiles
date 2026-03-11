@@ -28,6 +28,9 @@ TERM = "alacritty"
 [font]
 size = 11
 
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+
 [terminal.shell]
 args = ["--login", "-c", "tmux attach || tmux"]
 program = "/usr/bin/zsh"

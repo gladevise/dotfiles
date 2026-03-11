@@ -69,4 +69,4 @@ alias rarx='unrar x'
 
 # ghostty workaround for VK_ERROR_INCOMPATIBLE_DRIVER
 # https://github.com/ghostty-org/ghostty/discussions/8863#discussioncomment-14529500
-alias ghostty='__EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json ghostty'
+alias ghostty='~/.local/bin/ghostty-wrapper'

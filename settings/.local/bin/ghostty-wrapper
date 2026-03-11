@@ -1,0 +1,11 @@
+#!/bin/sh
+# Ghostty NVIDIA EGL workaround - applies only when NVIDIA driver is available
+# See: https://github.com/ghostty-org/ghostty/discussions/8863#discussioncomment-14529500
+
+NVIDIA_EGL=/usr/share/glvnd/egl_vendor.d/10_nvidia.json
+
+if [ -f "$NVIDIA_EGL" ]; then
+  export __EGL_VENDOR_LIBRARY_FILENAMES="$NVIDIA_EGL"
+fi
+
+exec /snap/bin/ghostty "$@"

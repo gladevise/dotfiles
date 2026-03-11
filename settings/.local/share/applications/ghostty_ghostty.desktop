@@ -5,7 +5,7 @@ Name=Ghostty
 Type=Application
 Comment=A terminal emulator
 X-SnapAppName=ghostty
-Exec=env __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json /snap/bin/ghostty --gtk-single-instance=true
+Exec=bash -c '~/.local/bin/ghostty-wrapper --gtk-single-instance=true'
 Icon=/snap/ghostty/current/share/icons/hicolor/512x512/apps/com.mitchellh.ghostty.png
 Categories=System;TerminalEmulator;
 Keywords=terminal;tty;pty;
@@ -17,4 +17,4 @@ Actions=new-window;
 [Desktop Action new-window]
 Name=New Window
 X-SnapAppName=ghostty
-Exec=env __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json /snap/bin/ghostty --gtk-single-instance=true
+Exec=bash -c '~/.local/bin/ghostty-wrapper --gtk-single-instance=true'

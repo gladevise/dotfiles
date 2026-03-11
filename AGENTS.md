@@ -1,5 +1,7 @@
 # AGENTS Guide
 
+Think in English, generate responses in Japanese.
+
 Audience: AI coding agents and human contributors working on this dotfiles repo. Keep changes small, safe, and idempotent. When in doubt, ask before running anything that installs or upgrades software on a user machine.
 
 ## Overview

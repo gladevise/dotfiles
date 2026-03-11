@@ -19,6 +19,24 @@ elif [[ -n "$LC_TERM_PROGRAM" ]]; then
   export TERM_PROGRAM="$LC_TERM_PROGRAM"
 fi
 
+# Fallback to xterm-256color if xterm-ghostty terminfo is not available
+# (e.g., SSH to remote machines without Ghostty terminfo installed)
+if [[ "$TERM" == xterm-ghostty ]]; then
+  if command -v infocmp &>/dev/null; then
+    infocmp "$TERM" &>/dev/null || export TERM=xterm-256color
+  else
+    # infocmp not available; check terminfo directory tree directly
+    # (does not detect hashed-database terminfo)
+    local _d _found=false
+    for _d in ${TERMINFO:-} "$HOME/.terminfo" "$HOME/.local/share/terminfo" \
+              ${(s.:.)TERMINFO_DIRS:-} \
+              /usr/share/terminfo /usr/local/share/terminfo /lib/terminfo /etc/terminfo; do
+      [[ -n "$_d" && ( -f "$_d/x/xterm-ghostty" || -f "$_d/78/xterm-ghostty" ) ]] && _found=true && break
+    done
+    $_found || export TERM=xterm-256color
+  fi
+fi
+
 eval "$(~/.local/bin/mise activate zsh)"
 eval "$(starship init zsh)"
 source <(fzf --zsh)

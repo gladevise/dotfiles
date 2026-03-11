@@ -2,8 +2,8 @@
 font-family = FiraCode Nerd Font
 font-size = 11
 
-# Theme (OneDark)
-theme = OneHalfDark
+# Theme (One Half Dark)
+theme = One Half Dark
 
 # Terminal
 shell-integration = zsh

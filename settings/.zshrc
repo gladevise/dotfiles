@@ -41,6 +41,7 @@ eval "$(~/.local/bin/mise activate zsh)"
 
 export EDITOR=nvim
 export VISUAL=nvim
+export SUDO_EDITOR="$(command -v nvim)"
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 

@@ -75,6 +75,10 @@ if [[ $(command -v ug) ]]; then
   alias ugh='ug --hidden'
 fi
 
+alias tm=tmux
+alias tma='tmux attach'
+alias tml='tmuxp load -y'
+
 upg(){
   ~/dotfiles/scripts/upgrade.sh
 }

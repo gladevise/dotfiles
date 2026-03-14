@@ -13,3 +13,16 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
   desc = "Disable auto comment insertion",
 })
+
+-- hidden file（ドットファイル）を通常ファイルと同じ色で表示（git-ignoredとの区別のため）
+-- ColorScheme autocmd + 即時適用（autocmds.luaはVeryLazyで読み込まれるため、
+-- 起動時のColorSchemeイベントには間に合わない）
+local grp = vim.api.nvim_create_augroup("SnacksExplorerHighlights", { clear = true })
+vim.api.nvim_create_autocmd("ColorScheme", {
+  group = grp,
+  callback = function()
+    vim.api.nvim_set_hl(0, "SnacksPickerPathHidden", { link = "SnacksPickerFile" })
+  end,
+  desc = "Override snacks.explorer hidden file highlight",
+})
+vim.api.nvim_set_hl(0, "SnacksPickerPathHidden", { link = "SnacksPickerFile" })

@@ -19,7 +19,6 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- extras
     { import = "lazyvim.plugins.extras.editor.fzf" },
-    { import = "lazyvim.plugins.extras.util.yazi" },
     { import = "lazyvim.plugins.extras.lang.git" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.json" },

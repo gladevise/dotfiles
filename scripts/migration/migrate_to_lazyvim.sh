@@ -13,8 +13,13 @@ rm -f ~/.local/share/nvim/site/autoload/plug.vim
 
 # 旧AppImage Neovimの削除（mise管理に移行）
 if [ -f /usr/local/bin/nvim ]; then
-  sudo rm /usr/local/bin/nvim
-  echo "Removed old AppImage Neovim from /usr/local/bin"
+  if file /usr/local/bin/nvim | grep -qE "ELF.*static|AppImage|ISO 9660"; then
+    sudo rm /usr/local/bin/nvim
+    echo "Removed old AppImage Neovim from /usr/local/bin"
+  else
+    echo "WARNING: /usr/local/bin/nvim exists but does not appear to be an AppImage."
+    echo "Please remove it manually if you want to use mise-managed Neovim."
+  fi
 fi
 
 # 旧neovim python/node providerの削除

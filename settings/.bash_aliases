@@ -4,8 +4,8 @@ alias py=python3
 alias i=nvim
 alias aptupg='sudo apt update && apt list --upgradable && sudo apt upgrade -y'
 
-# sudo nvim
-alias sdv='sudo -E -s nvim'
+# sudoedit (EDITOR=nvimが設定されているためnvimで開く。ユーザー権限で実行されるため全プラグイン有効)
+alias sdv='sudoedit'
 
 # eza aliases
 if [[ $(command -v eza) ]]; then

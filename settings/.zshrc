@@ -38,6 +38,10 @@ if [[ "$TERM" == xterm-ghostty ]]; then
 fi
 
 eval "$(~/.local/bin/mise activate zsh)"
+
+export EDITOR=nvim
+export VISUAL=nvim
+export SUDO_EDITOR="$(command -v nvim)"
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 
@@ -70,6 +74,10 @@ fi
 if [[ $(command -v ug) ]]; then
   alias ugh='ug --hidden'
 fi
+
+alias tm=tmux
+alias tma='tmux attach'
+alias tml='tmuxp load -y'
 
 upg(){
   ~/dotfiles/scripts/upgrade.sh

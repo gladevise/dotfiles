@@ -12,7 +12,9 @@ else
   echo "mise isn't installed"
   curl https://mise.run | sh
   ~/.local/bin/mise --version
-  ~/.local/bin/mise install
 fi
+
+# 常にmise installを実行（config.tomlの新規ツールを確実にインストール）
+mise install || ~/.local/bin/mise install
 
 popd

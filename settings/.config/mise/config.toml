@@ -1,13 +1,18 @@
 
 [tools]
+neovim = "latest"
+lazygit = "latest"
 node = "lts"
 bun = "latest"
 codex = "latest"
 fzf = "latest"
+"npm:tree-sitter-cli" = "latest"
+"npm:neovim" = "latest"
 yazi = "latest"
 lazydocker = "latest"
 
 uv = "latest"
+"pipx:pynvim" = "latest"
 "pipx:podman-compose" = "latest"
 "pipx:yt-dlp" = "latest"
 "pipx:powerline-status" = "latest"

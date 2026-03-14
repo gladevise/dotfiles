@@ -84,4 +84,18 @@ sudo apt install -y ${packages[@]}
 # set zsh as default shell
 sudo chsh -s $(which zsh) "$USER"
 
+# Install Nerd Font (FiraCode)
+FONT_DIR="$HOME/.local/share/fonts"
+FONT_NAME="FiraCode"
+if ! fc-list | grep -qi "FiraCode Nerd Font"; then
+  echo "Installing $FONT_NAME Nerd Font..."
+  mkdir -p "$FONT_DIR"
+  NERD_FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/${FONT_NAME}.tar.xz"
+  curl -fsSL "$NERD_FONT_URL" | tar -xJ -C "$FONT_DIR"
+  fc-cache -fv
+  echo "$FONT_NAME Nerd Font installed"
+else
+  echo "$FONT_NAME Nerd Font is already installed"
+fi
+
 popd

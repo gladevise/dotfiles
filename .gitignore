@@ -134,3 +134,4 @@ pip-selfcheck.json
 Session.vim
 
 scripts/test.sh
+.nvimlog

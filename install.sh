@@ -7,6 +7,9 @@ echo $PWD
 # Install apt packages
 ./scripts/install_apt.sh
 
+# Setup fcitx5 input method
+./scripts/settings_fcitx5.sh
+
 # Settings for podman
 ./scripts/settings_podman.sh
 

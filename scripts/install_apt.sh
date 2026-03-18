@@ -73,6 +73,13 @@ packages=(
   gnome-tweaks
   gnome-shell-extensions
 
+  # Input Method
+  im-config
+  fcitx5
+  fcitx5-mozc
+  fcitx5-config-qt
+  fcitx5-frontend-all
+
   # Containers
   podman
 )

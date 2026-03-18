@@ -80,6 +80,13 @@ packages=(
   fcitx5-config-qt
   fcitx5-frontend-all
 
+  # Japanese Language Support
+  language-pack-ja
+  language-pack-ja-base
+  language-pack-gnome-ja
+  language-pack-gnome-ja-base
+  fonts-noto-cjk
+
   # Containers
   podman
 )

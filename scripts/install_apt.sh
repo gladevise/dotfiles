@@ -73,6 +73,20 @@ packages=(
   gnome-tweaks
   gnome-shell-extensions
 
+  # Input Method
+  im-config
+  fcitx5
+  fcitx5-mozc
+  fcitx5-config-qt
+  fcitx5-frontend-all
+
+  # Japanese Language Support
+  language-pack-ja
+  language-pack-ja-base
+  language-pack-gnome-ja
+  language-pack-gnome-ja-base
+  fonts-noto-cjk
+
   # Containers
   podman
 )

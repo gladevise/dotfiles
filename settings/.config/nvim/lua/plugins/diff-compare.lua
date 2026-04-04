@@ -1,7 +1,7 @@
 -- lua/plugins/diff-compare.lua
 return {
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     -- init は snacks.setup() より前に実行されるが、
     -- コマンド実行時点では snacks は初期化済みなので問題なし
     init = function()

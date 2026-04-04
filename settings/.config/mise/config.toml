@@ -29,8 +29,6 @@ cargo-binstall = "latest"
 "cargo:cargo-cache" = "latest"
 "cargo:zoxide" = "latest"
 
-[settings]
-
 [settings.pipx]
 uvx = true
 

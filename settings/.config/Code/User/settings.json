@@ -685,4 +685,5 @@
     "https://json-schema.org/": true,
     "https://biomejs.dev": true
   },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
 }

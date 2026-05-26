@@ -1,0 +1,6 @@
+theme = "onedark"
+
+# Space f / Space F / Space / などの file picker / global search 側
+[editor.file-picker]
+hidden = false
+

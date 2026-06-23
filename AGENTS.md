@@ -50,7 +50,6 @@ Keep this sequence coherent when adding or modifying installers.
 - Node.js: Global npm packages belong in `scripts/install_npm.sh` under `packages`. Always ensure `nvm use --lts` before global installs.
 - Flatpak: Add app IDs to `scripts/install_flathub_apps.sh`.
 - Snap: Add packages to `scripts/install_snap.sh`.
-- VS Code extensions: Update `scripts/vscode_extensions_list.txt`; install via `scripts/install_vscode_extensions.sh` and upgrade via `scripts/upgrade_vscode_extensions.sh`.
 
 ## Dotfiles Management
 

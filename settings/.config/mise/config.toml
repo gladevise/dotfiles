@@ -29,6 +29,10 @@ cargo-binstall = "latest"
 "cargo:cargo-cache" = "latest"
 "cargo:zoxide" = "latest"
 
+## Security tools
+"npm:@trailofbits/vsix-audit" = "latest"
+yara-x = "latest"
+
 [settings.pipx]
 uvx = true
 

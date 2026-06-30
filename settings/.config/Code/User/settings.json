@@ -170,6 +170,15 @@
   // 拡張機能をリリースから1週間後に自動更新するように設定する
   "extensions.autoUpdate": "on",
   "extensions.autoUpdateDelay": 168,
+  "extensions.allowed": {
+    // まず全部ブロック
+    "*": false,
+    // Microsoft公式Publisherは許可
+    "ms-python": true,
+    "ms-vscode": true,
+    "ms-vscode-remote": true,
+    "github": true,
+  },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
     "*.db": "default"
